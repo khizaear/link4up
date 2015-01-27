@@ -1,0 +1,21 @@
+<html>
+<body>
+<form name="addform" enctype="multipart/form-data" method="post" action="product/add">
+	<div class="input text">
+		<label for="catCatName">Product Name</label>
+		<input type="text" id="catCatName" value="" maxlength="50" name="title">
+	</div>
+	<div class="input text">
+
+		<?php	echo $this->Form->input('Product Category', array('options' => $datas,'name'=>'precat', 'empty' => '(choose one)'));	?>
+	</div>
+	<div class="input text">
+		<label for="catCatName">Product Image</label>
+		<input type="file" id="catCatName"  name="image">
+	</div>
+	<input type="submit" value="add" name="sub">
+</form>
+
+
+</body>
+</html>

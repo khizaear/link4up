@@ -1,0 +1,203 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8">
+<title>Linkup4Apparels</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/page.css">
+	<style>
+	.carousel img {
+  min-width: 100%;
+  height: 500px;
+  max-width: none;
+}
+.carousel{
+margin-top:-20px;
+padding:0;
+background-color:#EAEAEA
+}
+.carousel-caption h3{
+font-size:480%;
+ background: rgba(5, 5, 5, 0.5); 
+ padding:10px
+}
+#content{
+margin-top:20px;
+}
+.sibebarbg{
+background-color:#EAEAEA;
+}
+.heading1 {
+    background-color: #215ca0;
+    border-bottom: 1px solid #d1d0cb;
+    color: #fff;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 65px;
+    line-height: 65px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+.heading1 p {
+    font-size: 14px;
+    font-style: normal;
+    margin: 0;
+    padding-left: 30px;
+}
+.black{
+color:#000000;
+}
+legend {
+   background: rgb(169,3,41);
+background: -moz-linear-gradient(top,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1)));
+background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: -o-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: -ms-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: linear-gradient(to bottom,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+-webkit-box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
+box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
+
+    padding: 5px;
+	color:#FFFFFF;
+}
+#content{
+min-height:400px !important;
+}
+	</style>
+       
+
+
+	
+
+
+
+<!-- dd menu -->
+</head>
+
+<body>
+<!-- <nav class="navbar navbar-inverse"></nav> -->
+<header>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"><img src="images/logo.png"></div>
+		<div class="col-md-6" style="margin-top:30px">
+			<form method="get" class="ng-pristine ng-valid">			
+				<div class="input-group">
+          <input type="text" placeholder="Search for..." class="form-control input-lg">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-search-plus"></i></button>
+          </span>
+        </div>
+	
+			</form>
+		</div>
+		<div class="col-md-3" style="margin-top:20px">
+			<h3><a class="black" href="#"><i class="fa fa-google-plus"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-twitter"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-facebook-square"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-youtube"></i></a></h3>
+		</div>
+		
+	</div>
+</div>
+</header>
+<nav class="navbar navbar-inverse">
+      <div class="container">
+	   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+        <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+			<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+<div class="carousel">
+<div data-example-id="carousel-with-captions">
+    <div data-ride="carousel" class="carousel slide" id="carousel-example-captions">
+      <ol class="carousel-indicators">
+        <li class="" data-slide-to="0" data-target="#carousel-example-captions"></li>
+        <li data-slide-to="1" data-target="#carousel-example-captions" class="active"></li>
+
+      </ol>
+      <div role="listbox" class="carousel-inner">
+        <div class="item">
+          <img  src="data1/images/banner.jpg">
+          <div class="carousel-caption">
+            <h3>We offer a best deal !</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="item active">
+          <img   src="data1/images/banner1.jpg" >
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        
+      </div>
+      <a data-slide="prev" role="button" href="#carousel-example-captions" class="left carousel-control">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a data-slide="next" role="button" href="#carousel-example-captions" class="right carousel-control">
+        <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="content" class="container">
+<div class="row">
+	<div ng-include src="'view/sidebar.html'"></div>
+	<div class="col-md-9 ">
+		<div ng-view></div>
+		
+	</div>
+	</div>
+	
+</section
+<section id="footer" class="footer">
+	<p><center>All Rights Reserved</center></p>
+</section>
+</body>
+
+
+   <script type="text/javascript" src="js/angular.min.js"></script>
+   <script type="text/javascript" src="js/angular-route.min.js"></script>
+   <script type="text/javascript" src="js/simplePagination.js"></script>
+
+   
+   <script src="js/app.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="js/lightbox.js"></script>
+</html>

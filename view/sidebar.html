@@ -1,0 +1,100 @@
+<style>
+.sub.panel-body{
+	padding:0 !important;
+	margin:0  !important;
+	
+}
+.subhead {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 11px;
+	background-color:#EAEAEA;
+}
+
+.panel.panel-default.subc{
+background-color:#EAEAEA !important;
+border:0px !important;
+margin:0 !important;
+ border-radius: 0 !important;
+
+}
+.sub.panel-body .panel-group{
+margin:0 !important;
+}
+.subc{
+margin:0;
+border:0;
+}
+ li.catlist{
+ border-style: solid;
+    border:solid 1px #EAEAEA;
+    display: block;
+    float: none;
+    padding: 5px 25px;
+    position: relative;
+
+}
+li.catlist a{
+text-decoration:none;
+
+}
+.nopad{
+padding :0 !important;
+background-color:#f9f9f9
+}
+</style>
+<div class="col-md-3" ng-controller="categories">
+		<!-- <ul class="nav nav-pills nav-stacked sibebarbg"  role="menu" aria-labelledby="dLabel">
+			<li class="active"><a href="javascript:"><strong>Home</strong></a></li>
+			<li class="dropdown-menu"  ng-repeat="x in datas">
+			<a class="dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="javascript:">{{x.cat.cat_name}} <span class="caret"></span></a>
+			<ul class="dropdown-menu" >
+				<li class="dropdown-submenu" ng-repeat="y in x.subcat"><a class="dropdown-toggle" data-toggle="dropdown" href="javascript:">{{y.subcat_name}}</a>
+					<ul class="dropdown-menu" >
+						<li ng-repeat="z in y.precat"><a href="javascript:">{{z.pre_catname}}</a></li>
+					</ul>
+				</li>                   
+			</ul>
+			</li>
+
+		</ul> -->
+	
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-primary" ng-repeat="x in datas">
+    <div class="panel-heading" role="tab" id="heading{{x.cat.cat_id}}">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{x.cat.cat_id}}" aria-expanded="true" aria-controls="collapse{{x.cat.cat_id}}">
+         {{x.cat.cat_name}}
+        </a>
+      </h4>
+    </div>
+    <div id="collapse{{x.cat.cat_id}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading{{x.cat.cat_id}}">
+      <div class="sub panel-body">
+		<div class="panel-group" id="accordion{{x.cat.cat_id}}" role="tablist" aria-multiselectable="true">
+		
+			<div class="panel panel-default subc" ng-repeat="y in x.subcat">
+			<div class="panel-heading subhead" role="tab" id="heading{{y.subcat_id}}">
+			  <h4 class="panel-title">
+				<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{x.cat.cat_id}}" href="#collapsesub{{y.subcat_id}}" aria-expanded="false" aria-controls="collapseThree">
+				  {{y.subcat_name}}
+				</a>
+			  </h4>
+			</div>
+			<div id="collapsesub{{y.subcat_id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{y.subcat_id}}">
+			  <div class="panel-body nopad">
+			  <li  class="catlist" ng-repeat="z in y.precat"><a href="#/subcat/{{z.precat_id}}">{{z.pre_catname}} </a></li>
+				 </div>
+			</div>
+		  </div>
+			
+			
+		</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>	
+		
+</div>

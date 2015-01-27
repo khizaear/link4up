@@ -1,0 +1,431 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #f8f8f8;
+	margin:0;
+	padding:0;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	line-height:20px;
+}
+#header {
+	width: 100%;
+	height: 109px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.header-main {
+	width:80%;
+	margin:auto;
+	height:109px;
+}
+.logo {
+	height:109px;
+	width:10%;
+	float:left;
+	
+}
+.right-header {
+	width:64%;
+	float:right;
+	height:46px;
+	margin:31px 0 31px 0;
+}
+.search {
+	height:46px;
+	width:353px;
+	float:left;
+}
+.allsearch {
+	width: 351px;
+	height: 44px;
+	line-height:44px;
+	padding-left:5px;
+	float:left;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	border: solid 1px #d3d5d8;
+	font-size:16px;
+	color:#666;
+}
+
+.bottonbox {
+	height:46px;
+	width:70px;
+	float:left;
+}
+
+.button {
+	width: 68px;
+	height: 48px;
+	background-image:url(../images/search.jpg);
+	background-color:#215ca0;
+	float:left;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	border: solid 1px #d3d5d8;
+	font-size:16px;
+	color:#fff;
+}
+
+
+.right-header1{
+	width:250px;
+	float:left;
+	height:46px;
+	margin:0;
+}
+.search1 {
+	height:30px;
+	width:178px;
+	float:left;
+}
+.allsearch1 {
+	width: 178px;
+	height: 30px;
+	line-height:30px;
+	padding-left:5px;
+	float:left;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	color:#666;
+}
+
+.bottonbox1 {
+	height:35px;
+	width:70px;
+	float:left;
+}
+
+.button1 {
+	width: 68px;
+	height: 36px;
+	background-color:#000;
+	float:left;
+	line-height:30px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	border:none 0;
+	font-size:12px;
+	color:#fff;
+}
+
+
+.link {
+	width:27%;
+	height: 16px;
+	padding-top:15px;
+	margin-left:6%;
+	float:left;
+}
+
+.link img{
+	float:left;
+	margin:0 10px 0 10px;
+}
+.navication {
+	
+	width:100%;
+	float:left;
+	height:44px;
+	background-color:#424a55;
+
+}
+
+.menu {
+	width:80%;
+	float:left;
+	font-family: Helvetica, Arial, sans-serif;
+	height:44px;
+	margin:0 10% 0 10%;
+}
+
+.banner {
+	width:100%;
+	float:left;
+	height:auto;
+}
+.banner-up {
+	float: left;
+	height: 250px;
+	position: absolute;
+	z-index:100;
+	top:450px;
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.banner-up-in {
+	float: left;
+	height:100%;
+	width:100%;
+}
+
+.banner-main {
+	float: left;
+	height:100%;
+	width:33.3%;
+}
+
+.banner-main img {
+	float: left;
+	height:100%;
+	width:100%;
+}
+
+#main-container {
+	float: left;
+	height: auto;
+	margin:160px 10% 0 10%;
+	width: 80%;
+}
+
+#main-container1 {
+	float: left;
+	height: auto;
+	margin:30px 10% 0 10%;
+	width: 80%;
+}
+
+.container {
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+.left-container {
+	float: left;
+	height: auto;
+	width:23%;
+}
+
+.right-container {
+	float: left;
+	height: auto;
+	margin-left:3%;
+	margin-right:3%;
+	width:71%;
+}
+
+.right-box {
+	float: left;
+	height: auto;
+	width:100%;
+}
+
+.right-box h2 {
+	float: left;
+	height: 65px;
+	background-color:#d1d0cb;
+	font-size:24px;
+	margin:0;
+	padding-left:3%;
+	color:#707070;
+	line-height:65px;
+	width:97%;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.inner-box {
+	float: left;
+	height: auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	width: 28%;
+	margin-right: 5%;
+	padding: 1%;
+	background-color: #FFFFFF;
+	-webkit-transition: all ease-in-out;
+	-moz-transition: all ease-in-out;
+	-ms-transition: all ease-in-out;
+	-o-transition: all ease-in-out;
+	transition: all ease-in-out;
+}
+
+.inner-box img{
+	float: left;
+	width:100%;
+}
+.pro-price{
+	float: left;
+	width:100%;
+}
+
+.pro-price h3 {
+	float: left;
+	font-size:13px;
+	padding-left:3%;
+	font-family:Arial, Helvetica, sans-serif;
+	height:60px;
+	color:#333333;
+	margin:0;
+	line-height:60px;
+	width:55%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.pro-price h4 {
+	float: left;
+	font-size:16px;
+	padding-left:3%;
+	font-family:Arial, Helvetica, sans-serif;
+	height:60px;
+	margin:0;
+	line-height:60px;
+	color:#333333;
+	width:20%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+.heading1 {
+	float: left;
+	height: 65px;
+	line-height:65px;
+	text-align:left;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+	border-bottom: solid 1px #d1d0cb;
+	background-color:#215ca0;
+	width:100%;
+}
+
+.heading1 h3 {
+	padding-left:30px;
+	font-style:normal;
+	font-size:14px;
+	margin:0;
+}
+
+.social-link {
+	float: left;
+	height: auto;
+	width: 33.3%;
+}
+
+.social-link img {
+	width: 100%;
+}
+#footer {
+	background-color: #373737;
+	float:left;
+	padding:0 10% 0 10%;
+	width:80%;
+}
+
+.footer-last {
+	background-color: #333333;
+	float:left;
+	height:50px;
+	padding:0 10% 0 10%;
+	width:80%;
+}
+
+.footer-last p {
+	text-align:center;
+	color:#dad9d9;
+	font-size:14px;
+	margin:0;
+	line-height:50px;
+}
+
+.inner-box:hover {
+	background-color: #d1d0cb;
+}
+
+.footbox {
+	width:100%;
+	margin-top:50px;
+	margin-bottom:25px;
+	float:left;
+}
+
+.foot {
+	width:16%;
+	margin-right:2%;
+	margin-left:2%;
+	float:left;
+}
+
+.foot3 {
+	width:12%;
+	float:left;
+	margin-right:0%;
+}
+
+.foot1 {
+	width:24%;
+	float:left;
+	margin-left:4%;
+}
+
+.foot h3 {
+	font-size: 20px;
+	font-style: normel;
+	margin:0 0 30px 0;
+	color: #fff;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot p {
+	font-size: 13px;
+	font-style: normel;
+	margin:7px 0 7px 0;
+	color:#dad9d9;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot3 h3 {
+	font-size: 20px;
+	font-style: normel;
+	margin:0 0 30px 0;
+	color: #fff;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot3 p {
+	font-size: 13px;
+	font-style: normel;
+	margin:7px 0 7px 0;
+	color:#dad9d9;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot1 h3 {
+	font-size: 20px;
+	font-style: normel;
+	margin:0 0 30px 0;
+	color: #fff;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.foot1 p {
+	font-size: 14px;
+	font-style: normel;
+	line-height:18px;
+	text-align:justify;
+	color:#dad9d9;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.payarea {
+	width:100%;
+	float:left;
+	margin-top:30x;
+}
+
+.payarea img {
+	float:left;
+	margin-right:5px;
+}.fac {
+	float: left;
+	width: 250px;
+}
+
+.fac img {
+	float: left;
+	width: 100%;
+}
