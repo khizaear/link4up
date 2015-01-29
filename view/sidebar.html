@@ -43,6 +43,10 @@ text-decoration:none;
 padding :0 !important;
 background-color:#f9f9f9
 }
+a.ng-binding{
+cursor:pointer !important;
+
+}
 </style>
 <div class="col-md-3" ng-controller="categories">
 		<!-- <ul class="nav nav-pills nav-stacked sibebarbg"  role="menu" aria-labelledby="dLabel">
@@ -60,11 +64,11 @@ background-color:#f9f9f9
 
 		</ul> -->
 	
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"  >
   <div class="panel panel-primary" ng-repeat="x in datas">
     <div class="panel-heading" role="tab" id="heading{{x.cat.cat_id}}">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{x.cat.cat_id}}" aria-expanded="true" aria-controls="collapse{{x.cat.cat_id}}">
+        <a data-toggle="collapse" data-parent="#accordion" data-href="#collapse{{x.cat.cat_id}}"  aria-controls="collapse{{x.cat.cat_id}}">
          {{x.cat.cat_name}}
         </a>
       </h4>
@@ -76,7 +80,7 @@ background-color:#f9f9f9
 			<div class="panel panel-default subc" ng-repeat="y in x.subcat">
 			<div class="panel-heading subhead" role="tab" id="heading{{y.subcat_id}}">
 			  <h4 class="panel-title">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{x.cat.cat_id}}" href="#collapsesub{{y.subcat_id}}" aria-expanded="false" aria-controls="collapseThree">
+				<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{x.cat.cat_id}}" data-href="#collapsesub{{y.subcat_id}}" aria-expanded="false" aria-controls="collapseThree">
 				  {{y.subcat_name}}
 				</a>
 			  </h4>
