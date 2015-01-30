@@ -95,8 +95,8 @@ cursor:pointer;
 
 <body>
 <!-- <nav class="navbar navbar-inverse"></nav> -->
-<nav id="scrollhead" class="navbar navbar-default navbar-fixed-top animated" style="display:none">
-<div class="container">
+<nav id="scrollhead" class="navbar navbar-default navbar-fixed-top animatedParent" style="display:none">
+<div class="container animated fadeInDown">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
         <img src="images/logo-small.png">
@@ -104,10 +104,10 @@ cursor:pointer;
     </div>
   </div>
 </nav>
-<header class="animated bounceInDown">
+<header class="animatedParent ">
 
 
-<div class="container">
+<div class="container animated fadeInUpShort">
 	<div class="row">
 		<div class="col-md-3"><img src="images/logo.png"></div>
 		<div class="col-md-6" style="margin-top:30px">
@@ -198,10 +198,10 @@ cursor:pointer;
   </div>
 </div>
 
-<section id="content" class="container">
+<section id="content" class="container animatedParent">
 <div class="row">
 	<div ng-include src="'view/sidebar.html'"></div>
-	<div class="col-md-9 animated lightSpeedIn">
+	<div class="col-md-9 animated fadeInRight">
 		<div ng-view> </div>
 		
 	</div>
@@ -223,6 +223,7 @@ cursor:pointer;
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="js/bs.js"></script>
 <script src="js/lightbox.js"></script>
+<script src="js/animate.js"></script>
 <script>
 $(window).scroll(function (event) {
 
@@ -231,7 +232,7 @@ $(window).scroll(function (event) {
 
     var scroll = $(window).scrollTop();
 	if(scroll > 200){	
-		$("#scrollhead").addClass("bounceIn");		
+		$("scrollhead").addClass("animated bounceInDown fast");
 		$("#scrollhead").css({"display":"block","z-index":"1"});
 
 	}
