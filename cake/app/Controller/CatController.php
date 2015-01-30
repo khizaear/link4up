@@ -14,4 +14,17 @@ class CatController extends AppController {
 		echo json_encode($data);
 		//echo "<pre>" .pr($data);
 	}
+	
+	public function getcats(){
+		$this->autoRender=false;
+		$categ=$this->cat->find('list');
+		$html= "<select name='category' class='input'>";
+		$html.="<option value='' selected>Select Category</option>";
+		foreach($categ as $catkey=>$catval){
+			$html.= "<option value='".$catkey."'>" .$catval ."</option>";
+		}
+		$html.= "</select>";
+		//pr($subcat);
+		return $html;
+	}
 }

@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animated.css">
 
 	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/page.css">
@@ -74,6 +75,13 @@ a.dropdown-toggle, a.carousel-control
 {
 cursor:pointer;
 }
+.navbar > .container .navbar-brand{
+ padding:5px; !important;
+
+}
+#scrollhead{
+	background: rgba(250, 250, 255, 0.8) !important;
+}
 	</style>
        
 
@@ -87,7 +95,18 @@ cursor:pointer;
 
 <body>
 <!-- <nav class="navbar navbar-inverse"></nav> -->
-<header>
+<nav id="scrollhead" class="navbar navbar-default navbar-fixed-top animated" style="display:none">
+<div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo-small.png">
+      </a>
+    </div>
+  </div>
+</nav>
+<header class="animated bounceInDown">
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-3"><img src="images/logo.png"></div>
@@ -182,8 +201,8 @@ cursor:pointer;
 <section id="content" class="container">
 <div class="row">
 	<div ng-include src="'view/sidebar.html'"></div>
-	<div class="col-md-9 ">
-		<div ng-view></div>
+	<div class="col-md-9 animated lightSpeedIn">
+		<div ng-view> </div>
 		
 	</div>
 	</div>
@@ -204,4 +223,23 @@ cursor:pointer;
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="js/bs.js"></script>
 <script src="js/lightbox.js"></script>
+<script>
+$(window).scroll(function (event) {
+
+	
+
+
+    var scroll = $(window).scrollTop();
+	if(scroll > 200){	
+		$("#scrollhead").addClass("bounceIn");		
+		$("#scrollhead").css({"display":"block","z-index":"1"});
+
+	}
+	if(scroll <  100){		
+		//$("scrollhead").addClass("bounceOut");
+		$("#scrollhead").css({"display":"none"});
+	} 
+    // Do something
+});
+</script>
 </html>
