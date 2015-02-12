@@ -15,6 +15,10 @@ app.config(['$routeProvider',
         templateUrl: 'view/subcat.html',
         controller: 'subcat'
       }).
+      when('/cat/:catId', {
+        templateUrl: 'view/catprod.html',
+        controller: 'catprod'
+      }).
       otherwise({
         redirectTo: '/'
       });
@@ -31,16 +35,29 @@ app.config(['$routeProvider',
 
 		});		
 	});
-	app.controller('subcat', function($scope,$http,$routeParams, $route) {	
-		var subcat=$routeParams.subcatId
-		$http.get('cake/product/getprod/'+subcat).success(function(data, status, headers, config) {			
+	app.controller('catprod', function($scope,$http,$routeParams, $route) {	
+		var subcat=$routeParams.catId
+		$http.get('cake/product/catprod/'+subcat).success(function(data, status, headers, config) {			
 			$scope.datas=data;	
 		});		
 	});
+	app.controller('subcat', function($scope,$http,$routeParams, $route) {	
+		var cat=$routeParams.subcatId
+		$http.get('cake/product/getprod/'+cat).success(function(data, status, headers, config) {			
+			$scope.datas=data;	
+		});		
+	});
+
 	
 	app.controller('categories', function($scope,$http) {		
 		$http.get('cake/cat/getcat').success(function(data, status, headers, config) {
 			$scope.datas=data;	
+		});		
+	});
+	
+	app.controller('catprod-manknit', function($scope,$http) {		
+		$http.get('cake/cat/getprods/1/').success(function(data, status, headers, config) {
+			$scope.mkt=data;	
 		});		
 	});
 	

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 30, 2015 at 09:13 AM
+-- Generation Time: Feb 12, 2015 at 07:25 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `cat` (
   `cat_name` char(50) DEFAULT NULL,
   `cat_status` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`cat_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `cat`
@@ -43,7 +43,8 @@ INSERT INTO `cat` (`cat_id`, `cat_name`, `cat_status`) VALUES
 (1, 'Mens Knitted Apparels', 1),
 (2, 'Womens Knitted Apparels', 1),
 (3, 'Mens Leather Apparels', 1),
-(4, 'Mens Woven Apparels', 1);
+(4, 'Mens Woven Apparels', 1),
+(5, 'Home Furnishing', 1);
 
 -- --------------------------------------------------------
 
@@ -58,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `precat` (
   `pre_catstatus` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`precat_id`),
   KEY `precat_id` (`precat_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=121 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=128 ;
 
 --
 -- Dumping data for table `precat`
@@ -184,7 +185,14 @@ INSERT INTO `precat` (`precat_id`, `pre_subcat_id`, `pre_catname`, `pre_catstatu
 (117, 10, 'Square Neck Tops', 1),
 (118, 10, 'Striped Tops', 1),
 (119, 10, 'Tank Tops', 1),
-(120, 10, 'V Neck Tops', 1);
+(120, 10, 'V Neck Tops', 1),
+(121, 22, 'Bed Sheets', 1),
+(122, 22, 'Bed Spreads', 1),
+(123, 22, 'Curtains', 1),
+(124, 22, 'Cushion Covers', 1),
+(125, 22, 'Hammocks', 1),
+(126, 22, 'Pillow Covers', 1),
+(127, 23, 'Bath Robes', 1);
 
 -- --------------------------------------------------------
 
@@ -194,21 +202,32 @@ INSERT INTO `precat` (`precat_id`, `pre_subcat_id`, `pre_catname`, `pre_catstatu
 
 CREATE TABLE IF NOT EXISTS `product` (
   `prod_id` int(11) NOT NULL AUTO_INCREMENT,
+  `prod_cat_id` int(11) DEFAULT NULL,
+  `prod_subcat_id` int(11) DEFAULT NULL,
   `prod_precat_id` int(11) DEFAULT NULL,
   `prod_title` char(50) DEFAULT NULL,
   `prod_img` varchar(300) DEFAULT NULL,
   `prod_status` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`prod_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`prod_id`, `prod_precat_id`, `prod_title`, `prod_img`, `prod_status`) VALUES
-(1, 39, 'GTP 1', 'GTP-1.jpg', 1),
-(2, 39, 'GTP 2', 'GTP-2.jpg', 1),
-(3, 39, 'GTP 3', 'GTP-3.jpg', 1);
+INSERT INTO `product` (`prod_id`, `prod_cat_id`, `prod_subcat_id`, `prod_precat_id`, `prod_title`, `prod_img`, `prod_status`) VALUES
+(3, 1, 1, 82, NULL, 'BBN-1.jpg', 1),
+(4, 1, 1, 82, NULL, 'BBN-2.jpg', 1),
+(5, 1, 1, 82, NULL, 'BBN-3.jpg', 1),
+(6, 1, 1, 83, NULL, 'BBR-1.jpg', 1),
+(7, 1, 1, 83, NULL, 'BBR-2.jpg', 1),
+(8, 1, 1, 83, NULL, 'BBR-3.jpg', 1),
+(10, 5, 22, 121, NULL, 'BST-1.jpg', 1),
+(11, 5, 22, 121, NULL, 'BST-2.jpg', 1),
+(12, 5, 22, 121, NULL, 'BST-3.jpg', 1),
+(13, 5, 22, 122, NULL, 'BS-1.jpg', 1),
+(14, 5, 22, 122, NULL, 'BS-2.jpg', 1),
+(15, 5, 22, 122, NULL, 'BST-3.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -222,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `subcat` (
   `subcat_name` char(50) DEFAULT NULL,
   `subcat_status` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`subcat_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `subcat`
@@ -246,7 +265,11 @@ INSERT INTO `subcat` (`subcat_id`, `subcat_cat_id`, `subcat_name`, `subcat_statu
 (15, 2, 'Baby Girl Apparels', 1),
 (17, 3, 'Bikers Jackets', 1),
 (18, 3, 'Jackets', 1),
-(19, 3, 'Pants', 1);
+(19, 3, 'Pants', 1),
+(22, 5, 'Bed Linen', 1),
+(23, 5, 'Fabrics', 1),
+(24, 5, 'Kitchen Linen', 1),
+(25, 5, 'Table Linen', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

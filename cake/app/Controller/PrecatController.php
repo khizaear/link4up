@@ -43,4 +43,16 @@ class PrecatController extends AppController {
 
 		
 	}
+	
+	public function get_precat($id=1){
+	
+		$this->autoRender=false;
+		$data="<select id='precat' name='precat' required><option value=''>Select Pre category</option>";
+		$subcat=$this->precat->find('list',array('conditions'=>array('pre_subcat_id' => $id)));
+		foreach($subcat as $key=>$val){
+			$data.="<option value='".$key."'>".$val."</option>";
+		}
+		$data.="</select>";
+		return $data;
+	}
 }

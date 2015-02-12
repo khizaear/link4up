@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>Linkup4Apparels</title>
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animated.css">
 
 	<link rel="stylesheet" href="css/lightbox.css">
@@ -164,11 +164,7 @@ cursor:pointer;
 <div class="carousel">
 <div data-example-id="carousel-with-captions">
     <div data-ride="carousel" class="carousel slide" id="carousel-example-captions">
-      <ol class="carousel-indicators">
-        <li class="" data-slide-to="0" data-target="#carousel-example-captions"></li>
-        <li data-slide-to="1" data-target="#carousel-example-captions" class="active"></li>
 
-      </ol>
       <div role="listbox" class="carousel-inner">
         <div class="item">
           <img  src="data1/images/banner.jpg">
@@ -177,6 +173,31 @@ cursor:pointer;
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
+		
+		<div class="item">
+          <img  src="data1/images/banner4.jpg">
+          <div class="carousel-caption">
+            <h3>We offer a best deal !</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+		
+		<div class="item">
+          <img  src="data1/images/banner3.jpg">
+          <div class="carousel-caption">
+            <h3>We offer a best deal !</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+		
+		<div class="item">
+          <img  src="data1/images/banner2.jpg">
+          <div class="carousel-caption">
+            <h3>We offer a best deal !</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+		
         <div class="item active">
           <img   src="data1/images/banner1.jpg" >
           <div class="carousel-caption">
@@ -207,34 +228,31 @@ cursor:pointer;
 	</div>
 	</div>
 	
-</section
+</section>
 <section id="footer" class="footer">
 	<p><center>All Rights Reserved</center></p>
 </section>
 </body>
 
-
+   <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
    <script type="text/javascript" src="js/angular.min.js"></script>
    <script type="text/javascript" src="js/angular-route.min.js"></script>
    <script type="text/javascript" src="js/simplePagination.js"></script>
 
+
    
-   <script src="js/app.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/app.js"></script>
 <script src="js/bs.js"></script>
 <script src="js/lightbox.js"></script>
 <script src="js/animate.js"></script>
+
+
 <script>
 $(window).scroll(function (event) {
-
-	
-
-
     var scroll = $(window).scrollTop();
 	if(scroll > 200){	
 		$("scrollhead").addClass("animated bounceInDown fast");
 		$("#scrollhead").css({"display":"block","z-index":"1"});
-
 	}
 	if(scroll <  100){		
 		//$("scrollhead").addClass("bounceOut");
@@ -243,4 +261,5 @@ $(window).scroll(function (event) {
     // Do something
 });
 </script>
+
 </html>

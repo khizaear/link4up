@@ -3,11 +3,11 @@
 class ProductController extends AppController {
 	
 	var $ext=".html";
-	var $uses=array('prods','precat');
+	var $uses=array('prods','cat','subcat','precat');
 	//var $scaffold;
 	//public $components = array('ImageCropResize.Image');
 	public function index(){	
-		$datas=$this->precat->find('list');
+		$datas=$this->cat->find('list');
 		$this->set('datas',$datas);
 		//$this->render('index');
 	}
@@ -17,6 +17,14 @@ class ProductController extends AppController {
 		$subcat=$this->request->params['pass'][0];
 		$this->prods->recursive=-1;
 		$data=$this->prods->find('all',array('conditions' => array('prod_precat_id' => $subcat)));
+		echo json_encode($data);
+	}
+	
+	public function catprod($id=1){	
+		$this->autoRender=false;
+		//$subcat=$this->request->params['pass'][0];
+		$this->prods->recursive=-1;		
+		$data=$this->prods->find('all',array('conditions' => array('prod_cat_id' => $id)));
 		echo json_encode($data);
 	}
 	

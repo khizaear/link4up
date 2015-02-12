@@ -33,7 +33,19 @@ class SubcatController extends AppController {
 		$datas=$this->getcats();
 		$this->set('datas',$datas);
 		$this->render('/product/precat');
-
 		
 	}
+	
+	public function get_subcat($id=1){
+	
+		$this->autoRender=false;
+		$data="<select onchange='pop_precat(this.value)' id='subcat' name='subcat' required><option value=''>Select Sub category</option>";
+		$subcat=$this->subcat->find('list',array('conditions'=>array('subcat_cat_id' => $id)));
+		foreach($subcat as $key=>$val){
+			$data.="<option value='".$key."'>".$val."</option>";
+		}
+		$data.="</select>";
+		return $data;
+	}
+	
 }

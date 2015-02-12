@@ -1,5 +1,12 @@
-@charset "utf-8";
-/* CSS Document */
+.nav-paypal{
+background: -moz-linear-gradient(center bottom , #005282 0px, #005282 20%, #0083cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+background-image: -webkit-gradient(linear,	left top,	left bottom,	color-stop(0.55, #0083CF),	color-stop(1, #005282));
+    border-color: #00629b #004872 #003b5d;
+    box-shadow: 0 1px #1794dc inset;
+    text-shadow: 0 -1px #004c77;
+
+}
+/* CSS Document 
 
 body {
 	background-color: #f8f8f8;
@@ -428,4 +435,5 @@ body {
 .fac img {
 	float: left;
 	width: 100%;
-}
+} */
+

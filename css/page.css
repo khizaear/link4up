@@ -1,0 +1,67 @@
+.nav-paypal{
+background: -moz-linear-gradient(center bottom , #005282 0px, #006282 20%, #0083cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+background-image: -webkit-gradient(linear,	left top,	left bottom,	color-stop(0.55, #0083CF),	color-stop(1, #005282));
+    border-color: #00629b #004872 #003b5d;
+    box-shadow: 0 1px #1794dc inset;
+    text-shadow: 0 -1px #004c77;
+
+}
+a.navbar-brand  {
+    color: #ffffff;
+}
+.nav-paypal li.active{
+	background: -moz-linear-gradient(center bottom , #005282 0px, #005282 20%, #0083cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #00629b #004872 #003b5d;
+    box-shadow: 0 1px #1794dc inset;
+    text-shadow: 0 -1px #004c77;
+}
+.nav-paypal li > a:hover{
+ background: -moz-linear-gradient(center bottom , #005282 0px, #005282 20%, #0083cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #00629b #004872 #003b5d;
+    box-shadow: 0 1px #1794dc inset;
+    text-shadow: 0 -1px #004c77;
+}
+
+.nav-paypal li > a{
+color:#FFFFFF;
+}
+.nav-paypal  ul.dropdown-menu, .nav .open > a:focus, .nav .open > a:hover {
+	background: -moz-linear-gradient(center bottom , #005282 0px, #005282 20%, #0083cf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #00629b #004872 #003b5d;
+    box-shadow: 0 1px #1794dc inset;
+    text-shadow: 0 -1px #004c77;
+}
+.panel{
+border:solid 1px #CCC;
+
+}
+.panel-paypal > .panel-heading  {
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.55, #F9F9F9),
+	color-stop(1, #EAEAEA)
+);
+background-image: -o-linear-gradient(bottom, #F9F9F9 55%, #EAEAEA 100%);
+background-image: -moz-linear-gradient(bottom, #F9F9F9 55%, #EAEAEA 100%);
+background-image: -webkit-linear-gradient(bottom, #F9F9F9 55%, #EAEAEA 100%);
+background-image: -ms-linear-gradient(bottom, #F9F9F9 55%, #EAEAEA 100%);
+background-image: linear-gradient(to bottom, #F9F9F9 55%, #EAEAEA 100%);	
+ color: #666;
+
+}
+.panel-paypal > .panel-footer  {
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.55, #E2E2E2),
+	color-stop(1, #F2F2F2)
+);
+background-image: -o-linear-gradient(bottom, #E2E2E2 55%, #F2F2F2 100%);
+background-image: -moz-linear-gradient(bottom, #E2E2E2 55%, #F2F2F2 100%);
+background-image: -webkit-linear-gradient(bottom, #E2E2E2 55%, #F2F2F2 100%);
+background-image: -ms-linear-gradient(bottom, #E2E2E2 55%, #F2F2F2 100%);
+background-image: linear-gradient(to bottom, #E2E2E2 55%, #F2F2F2 100%);
+}

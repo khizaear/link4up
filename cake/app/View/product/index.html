@@ -1,6 +1,53 @@
 <html>
 <body>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+</body>
+<script>
+$(document).ready(function(){
+	$("#category").change(function(){
+		cat=$("#category").val();
+		$.ajax({
+			url:"http://localhost/link4up/cake/subcat/get_subcat/"+cat,
+			method: 'GET',
+			success:function(data){
+				$("#subcat").html(data)
+			},error:function(err){
+				console.log("Error Reason is "+err.statusText);
+			}
+		});
+	});
+
+	//$("#subcat").change(function(){
+		//subcat=$("#subcat").val();
+		//alert(subcat);
+
+	//});
+});
+function pop_precat(val){
+	$.ajax({
+		url:"http://localhost/link4up/cake/precat/get_precat/"+val,
+		method: 'GET',
+		success:function(subdata){
+			$("#precat").html(subdata)
+		},error:function(err){
+			alert(err);
+		}
+	});
+}
+</script>
 <form name="addform" enctype="multipart/form-data" method="post" action="product/add">
+	<div class="input text">
+		<?php	echo $this->Form->input('category', array('options' => $datas,'name'=>'category', 'empty' => '(choose one)'));	?>
+	</div>
+	<div class="input text">
+		<label for="catCatName">Sub Category</label>
+		<div id="subcat">&nbsp;</div>
+	</div>
+	<div class="input text">
+		<label for="catCatName">pre Category</label>
+		<div id="precat">&nbsp;</div>
+	</div>
 	<div class="input text">
 		<label for="catCatName">Product Name</label>
 		<input type="text" id="catCatName" value="" maxlength="50" name="title">
@@ -16,6 +63,4 @@
 	<input type="submit" value="add" name="sub">
 </form>
 
-
-</body>
 </html>
