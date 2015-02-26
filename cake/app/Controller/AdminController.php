@@ -3,13 +3,42 @@
 class AdminController extends AppController {
 	
 	var $ext=".html";
-	var $uses=array('prods','cat','subcat','precat');
+	var $uses=array('prods','cat','subcat','precat','admin');
 	//var $scaffold;
 	//public $components = array('ImageCropResize.Image');
+	public function login(){
+		$datas="Enter UserId & Password to Access Application";
+		if($this->data){
+			$user=$this->admin->find('first',array('conditions'=>array('admin_userid'=>$this->data['userid'],'admin_password'=>$this->data['password'])));
+			if(count($user)>0){
+				$this->Session->write('user', $user);
+				$this->redirect(array('controller' => 'admin', 'action' => 'index'));
+			}else{
+				//pr($user);
+				$datas="<div class='alert alert-danger'><h2>Invalid Login</h2> Provide Valid Login Details</div>";
+			}
+		}
+		$this->set('datas',$datas);
+		
+		//$this->render('index');
+	}
 	public function index(){	
 		$datas=$this->cat->find('list');
 		$this->set('datas',$datas);
 		//$this->render('index');
+	}
+	public function catlog(){
+		$this->autoRender=false;
+		$this->cat->recursive=-1;
+		$this->subcat->recursive=-1;
+		$maincat=$this->cat->find('list');
+		foreach($maincat as $ckey=>$cval){		
+			foreach($cval as $ckey2=>$cval2){	
+				pr($cval2);
+				$cat[$ckey2][$cval][]=$this->subcat->find('all',array('conditions'=>array('subcat_cat_id'=>$ckey2['cat_id'])));	
+			}
+		}
+		pr($cat);
 	}
 	
 	public function get_subcat($id=1){	

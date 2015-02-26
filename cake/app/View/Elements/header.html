@@ -9,6 +9,12 @@
 				<li class="active"><a href="http://localhost/link4up/cake/admin/listprod/#">Dashboard</a></li>
 				<li><a href="http://localhost/link4up/cake/admin/logout/#">Logout</a></li>
 			</ul>
+			<?php if(count($this->Session->read('user'))>0) { ?>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="http://localhost/link4up/cake/admin/listprod/#">Welcome <?php echo $this->Session->read('user.admin.admin_name') ; ?></?php></a></li>
+				<li><a href="http://localhost/link4up/cake/admin/logout/">Logout</a></li>
+			</ul>
+			<?php } ?>
 		</div><!-- /.nav-collapse -->
 	</div><!-- /.container -->
 </nav><!-- /.navbar -->

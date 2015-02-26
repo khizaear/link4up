@@ -1,0 +1,26 @@
+<div class="col-lg-8" >
+	<form  name="form1" action="http://localhost/link4up/cake/admin/login/" method="post" enctype="multipart/form-data">
+		<div class="panel panel-paypal">			
+			<div class="panel-heading"><h2>Login Required</h2></div>
+			<div class="panel-body">
+				<?php if(isset($datas)) { ?>
+					<div class="form-group">						
+						<?php echo $datas; ?>
+					</div>	
+				<?php }?>
+				<div class="form-group">
+					<label>UserId</label>
+					<input type="text" class="form-control" name="userid" required>
+				</div>		
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" required>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<input class="btn btn-success btn-lg" type="submit" value="Create" name="b1">
+			</div>			
+		</div>
+	</form>
+
+</div>

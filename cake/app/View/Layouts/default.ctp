@@ -49,7 +49,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				<p class="visible-xs">
 					<button class="btn btn-primary btn-xs" data-toggle="offcanvas" type="button">Menus</button>
 				</p>
-				<div class="clearfix">&nbsp;</div>
+
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 			</div>
