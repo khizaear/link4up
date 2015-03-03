@@ -1,0 +1,35 @@
+<div class="col-lg-12">
+	<form action="<?php echo  Router::url('/admin/editsubcat/'); ?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="sub" value="<?php echo $datas['subcat']['subcat_id'] ?>" >
+	<div class="panel panel-paypal">
+		<div class="panel-heading"><h2>Edit Subcategory</h2></div>
+		<div class="panel-body">		
+			<div class="form-group">
+				<label>Category</label>
+				<Select name="cat" id="category" class="form-control" required="" >
+					<option style="font-weight:bolder" value='<?php echo $datas['cat']['cat_id'] ?>' selected><?php echo  $this->requestAction('admin/getcatname/'.$datas['cat']['cat_id']); ?></option>
+					<?php 
+						foreach($datas['ccc']['cat'] as $ck=>$cv){
+							echo '<option value="'.$ck.'">'.$cv.'</option>';							
+						}
+					?>
+				</select>
+			</div>
+			<div class="form-group">
+			<div id="subcat">
+				<label>Sub Category</label>
+				<input class="form-control" name="subcat" value="<?php echo $datas['subcat']['subcat_name']; ?>"
+			</div>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<input class="btn btn-success btn-lg" type="submit" value="Update Product" name="b1">
+		</div>
+		
+	</div>
+	</form>
+</div>
+<script>
+$(document).ready(function(){
+}
+</script>

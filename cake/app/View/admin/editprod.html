@@ -1,5 +1,5 @@
-<div class="col-lg-8 col-md-offset-2">
-	<form action="http://localhost/link4up/cake/admin/update/" method="post" enctype="multipart/form-data">
+<div class="col-lg-12">
+	<form action="<?php echo  Router::url('/admin/update/'); ?>" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="prod" value="<?php echo $datas['prods']['prod_id'] ?>" >
 	<div class="panel panel-paypal">
 		
@@ -34,7 +34,7 @@
 			</div>
 			<div class="thumbnail" id="curimg">
 				<label>Current Image </label> <span><a href="javascript:" class="btn btn-danger pull-right" id="remimg">Remove</a></span>
-				<img src="http://localhost/link4up/cake/prodimg/<?php echo $datas['prods']['prod_img']; ?>">
+				<img src="<?php echo  Router::url('/prodimg/').$datas['prods']['prod_img']; ?>">
 			</div>
 			<div class="form-group" id="showimg" style="display:none">
 				<label >Choose  New Prodcut Image</label>
@@ -67,7 +67,7 @@ $(document).ready(function(){
 	$("#category").change(function(){
 		cat=$("#category").val();
 		$.ajax({
-			url:"http://localhost/link4up/cake/admin/get_subcat/"+cat,
+			url:"<?php echo  Router::url('/admin/get_subcat/'); ?>"+cat,
 			method: 'GET',
 			success:function(data){
 				$("#subcat").html(data)
@@ -79,7 +79,7 @@ $(document).ready(function(){
 });
 function pop_precat(val){
 	$.ajax({
-		url:"http://localhost/link4up/cake/admin/get_precat/"+val,
+		url:"<?php echo  Router::url('/admin/get_precat/'); ?>"+val,
 		method: 'GET',
 		success:function(subdata){
 			$("#precat").html(subdata)

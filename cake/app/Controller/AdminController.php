@@ -28,17 +28,12 @@ class AdminController extends AppController {
 		//$this->render('index');
 	}
 	public function catlog(){
-		$this->autoRender=false;
-		$this->cat->recursive=-1;
-		$this->subcat->recursive=-1;
-		$maincat=$this->cat->find('list');
-		foreach($maincat as $ckey=>$cval){		
-			foreach($cval as $ckey2=>$cval2){	
-				pr($cval2);
-				$cat[$ckey2][$cval][]=$this->subcat->find('all',array('conditions'=>array('subcat_cat_id'=>$ckey2['cat_id'])));	
-			}
-		}
-		pr($cat);
+		//$this->autoRender=false;
+		$this->cat->recursive=2;
+		$maincat=$this->cat->find('all');
+		//pr($maincat);
+		$this->set('data',$maincat);
+		$this->render("catalog");
 	}
 	
 	public function get_subcat($id=1){	
@@ -170,6 +165,46 @@ class AdminController extends AppController {
 		$datas['subcat']=$this->subcat->find('list');
 		$this->set('datas',$datas);
 		$this->render('editprod');
+	}
+	public function editcat($id=null){		
+		//$this->autoRender=false;
+		$this->cat->recursive=-1;				
+		$datas=$this->cat->findBycat_id($id);
+		if($this->data){
+			$this->cat->id=$this->data['cat'];
+			$data['cat_name']=$this->data['category'];
+			$this->cat->save($data);
+			$this->redirect(array('controller' => 'admin', 'action' => 'catlog'));
+		}
+		$this->set('datas',$datas);
+	}
+	public function editsubcat($id=null){		
+		//$this->autoRender=false;
+		$this->subcat->recursive=1;				
+		$datas=$this->subcat->findBysubcat_id($id);
+		$datas['ccc']['cat']=$this->cat->find('list');
+		if($this->data){
+			$this->subcat->id=$this->data['sub'];
+			$data['subcat_name']=$this->data['subcat'];
+			$data['subcat_cat_id']=$this->data['cat'];
+			$this->subcat->save($data);
+			$this->redirect(array('controller' => 'admin', 'action' => 'catlog'));
+		}
+		$this->set('datas',$datas);
+	}
+	public function editprecat($id=null){		
+		//$this->autoRender=false;
+		$this->precat->recursive=2;		
+		$datas=$this->precat->findByprecat_id($id);
+		$datas['ccc']['cat']=$this->cat->find('list');
+		if($this->data){
+			$this->precat->id=$this->data['pre'];
+			$data['pre_catname']=$this->data['precat'];
+			$data['pre_subcat_id']=$this->data['subcat'];
+			$this->precat->save($data);
+			$this->redirect(array('controller' => 'admin', 'action' => 'catlog'));
+		}
+		$this->set('datas',$datas);
 	}
 	
 	public function getall(){
