@@ -206,7 +206,15 @@ class AdminController extends AppController {
 		}
 		$this->set('datas',$datas);
 	}
-	
+	public function pageabout(){
+		$data=$file = file_get_contents('/aboustus.txt', true);
+		if($this->data){
+			$file = 'aboustus.txt';
+			file_put_contents($file,$this->data['content']);
+			
+		}
+		$this->set('data',$data);
+	}
 	public function getall(){
 		$this->autoRender=false;
 		$this->prods->recursive=-1;

@@ -17559,3 +17559,666 @@ Request URL: /link4up/cake/prodimg/thumb-BST-2.jpg
 Stack Trace:
 #0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBN-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBN-3.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-3.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BST-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BST-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BS-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:50 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BS-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:18:52 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/BBN-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:21 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/BBN-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:41 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/BBN-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BST-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBN-3.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BBR-3.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BST-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BS-1.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:56 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-BS-2.jpg
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:19:57 Error: [MissingControllerException] Controller class ProdimgController could not be found.
+Exception Attributes: array (
+  'class' => 'ProdimgController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/prodimg/thumb-
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 19:28:44 Error: Fatal Error (4): syntax error, unexpected '-', expecting '(' in [D:\wamp\www\link4up\cake\app\Controller\AdminController.php, line 209]
+2015-03-03 19:28:44 Error: [FatalErrorException] syntax error, unexpected '-', expecting '('
+Request URL: /link4up/cake/admin/page-about
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 209)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 209, Array)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\wamp\www\lin...', 209, Array)
+#3 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-03 19:30:14 Error: Fatal Error (4): syntax error, unexpected '-', expecting '(' in [D:\wamp\www\link4up\cake\app\Controller\AdminController.php, line 209]
+2015-03-03 19:30:14 Error: [FatalErrorException] syntax error, unexpected '-', expecting '('
+Request URL: /link4up/cake/admin/page-about
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 209)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 209, Array)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\wamp\www\lin...', 209, Array)
+#3 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-03 19:30:39 Error: [MissingViewException] View file "Admin\pageabout.html" is missing.
+Exception Attributes: array (
+  'file' => 'Admin\\pageabout.html',
+)
+Request URL: /link4up/cake/admin/pageabout
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 D:\wamp\www\link4up\cake\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#4 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-03 20:14:30 Error: Fatal Error (4): syntax error, unexpected 'parser_rules' (T_STRING), expecting ',' or ';' in [D:\wamp\www\link4up\cake\app\View\admin\pageabout.html, line 123]
+2015-03-03 20:14:30 Error: [FatalErrorException] syntax error, unexpected 'parser_rules' (T_STRING), expecting ',' or ';'
+Request URL: /link4up/cake/admin/pageabout
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 123)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 123, Array)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\wamp\www\lin...', 123, Array)
+#3 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-03 20:15:00 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:15:27 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:16:26 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:17:23 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:18:54 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:19:33 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:20:24 Error: [MissingControllerException] Controller class WysiwygController could not be found.
+Exception Attributes: array (
+  'class' => 'WysiwygController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/wysiwyg/dist/wysihtml5-0.4.0pre.js
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 20:20:25 Error: [MissingControllerException] Controller class WysiwygController could not be found.
+Exception Attributes: array (
+  'class' => 'WysiwygController',
+  'plugin' => NULL,
+)
+Request URL: /link4up/cake/wysiwyg/dist/wysihtml5-0.4.0pre.js
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-03 20:20:41 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:21:44 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:22:15 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:22:42 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:22:57 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:22:59 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:23:32 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:23:36 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:23:40 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:23:42 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:23:51 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:26:12 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:26:16 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:26:19 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:26:21 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:30:31 Error: Fatal Error (4): syntax error, unexpected ':', expecting ',' or ';' in [D:\wamp\www\link4up\cake\app\View\admin\pageabout.html, line 74]
+2015-03-03 20:30:31 Error: [FatalErrorException] syntax error, unexpected ':', expecting ',' or ';'
+Request URL: /link4up/cake/admin/pageabout
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 74)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 74, Array)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\wamp\www\lin...', 74, Array)
+#3 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-03 20:30:33 Error: Fatal Error (4): syntax error, unexpected ':', expecting ',' or ';' in [D:\wamp\www\link4up\cake\app\View\admin\pageabout.html, line 74]
+2015-03-03 20:30:33 Error: [FatalErrorException] syntax error, unexpected ':', expecting ',' or ';'
+Request URL: /link4up/cake/admin/pageabout
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 74)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\wamp\www\lin...', 74, Array)
+#2 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\wamp\www\lin...', 74, Array)
+#3 D:\wamp\www\link4up\cake\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-03 20:30:43 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:10 Error: [MissingActionException] Action AdminController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admin',
+)
+Request URL: /link4up/cake/admin/admin/pageabout
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:22 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:26 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:31 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:35 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:31:37 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:32:01 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:32:07 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:33:09 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:34:49 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:34:52 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:35:44 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-03 20:35:47 Error: [MissingActionException] Action AdminController::css() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'css',
+)
+Request URL: /link4up/cake/admin/css/stylesheet.css
+Stack Trace:
+#0 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 D:\wamp\www\link4up\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest))
+#2 D:\wamp\www\link4up\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
