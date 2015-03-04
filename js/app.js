@@ -79,3 +79,7 @@ app.config(['$routeProvider',
 	});
 	
 	
+		app.controller('banner', function($scope,$location,$route) {		
+		 $scope.locations = window.location;
+		});
+	

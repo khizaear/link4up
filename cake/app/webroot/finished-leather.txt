@@ -1,7 +1,7 @@
 <div class="page-header">
 <h1>Bootstrap grid examples</h1>
 
-<p>Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+<p><img alt="" src="http://cdn-careers.sstatic.net/careers/gethired/img/companypageadfallback-leaderboard-2.png?v=59b591051ad7" style="display:block; height:90px; width:728px" />Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
 </div>
 
 <h3>Three equal columns</h3>
