@@ -5,20 +5,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
+
 	<?php echo $this->Html->charset(); ?>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="" name="description">
 	<meta content="" name="author">
-	<link href="http://localhost/link4up/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo Router::url('../../css/'); ?>bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
-	<!--<link href="http://www.fuelcdn.com/fuelux/3.5.1/css/fuelux.min.css" rel="stylesheet">
-	<script src="http://www.fuelcdn.com/fuelux/3.5.1/js/fuelux.min.js"></script> -->
-	<script src="http://localhost/link4up/js/jquery-1.11.2.min.js"></script>
-	<script src="http://localhost/link4up/js/bs.js"></script>
-	<link rel="stylesheet" href="http://localhost/link4up/css/animated.css">
-	<link rel="stylesheet" href="http://localhost/link4up/css/lightbox.css">
-	<link rel="stylesheet" href="http://localhost/link4up/css/page.css">
+	<script src="<?php echo Router::url('../../js/'); ?>jquery-1.11.2.min.js"></script>
+	<script src="<?php echo Router::url('../../js/'); ?>bs.js"></script>
+	<link rel="stylesheet" href="<?php echo Router::url('../../css/'); ?>animated.css">
+	<link rel="stylesheet" href="<?php echo Router::url('../../css/'); ?>lightbox.css">
+	<link rel="stylesheet" href="<?php echo Router::url('../../css/'); ?>page.css">
 	<link rel="stylesheet" href="http://getbootstrap.com/examples/offcanvas/offcanvas.css">
 	<link rel="stylesheet" href="http://getbootstrap.com//dist/css/bootstrap-theme.min.css">
 	
