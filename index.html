@@ -82,6 +82,16 @@ cursor:pointer;
 #scrollhead{
 	background: rgba(250, 250, 255, 0.8) !important;
 }
+.catlist.ng-scope.active {
+background: linear-gradient(to bottom, rgba(169, 3, 41, 1) 0%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+
+
+
+}
+.catlist.ng-scope.active a{
+color:#FFFFFF;
+}
 	</style>
        
 
@@ -94,73 +104,8 @@ cursor:pointer;
 </head>
 
 <body>
-<!-- <nav class="navbar navbar-inverse"></nav> -->
-<nav id="scrollhead" class="navbar navbar-default navbar-fixed-top animatedParent" style="display:none">
-<div class="container animated fadeInDown">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo-small.png">
-      </a>
-    </div>
-  </div>
-</nav>
-<header class="animatedParent ">
+<div ng-include src="'view/header.html'"></div>
 
-
-<div class="container animated fadeInUpShort">
-	<div class="row">
-		<div class="col-md-3"><img src="images/logo.png"></div>
-		<div class="col-md-6" style="margin-top:30px">
-			<form method="get" class="ng-pristine ng-valid">			
-				<div class="input-group">
-          <input type="text" placeholder="Search for..." class="form-control input-lg">
-          <span class="input-group-btn">
-            <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-search-plus"></i></button>
-          </span>
-        </div>
-	
-			</form>
-		</div>
-		<div class="col-md-3" style="margin-top:20px">
-			<h3><a class="black" href="#"><i class="fa fa-google-plus"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-twitter"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-facebook-square"></i></a> &nbsp; <a href="#" class="black"><i class="fa fa-youtube"></i></a></h3>
-		</div>
-		
-	</div>
-</div>
-</header>
-<nav class="navbar navbar-inverse">
-      <div class="container">
-	   <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     
-    </div>
-        <div id="bs-example-navbar-collapse-9" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-			<li class="dropdown">
-          <a data-href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-          </ul>
-
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
 <div class="carousel">
 <div data-example-id="carousel-with-captions">
     <div data-ride="carousel" class="carousel slide" id="carousel-example-captions">
@@ -237,6 +182,7 @@ cursor:pointer;
    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
    <script type="text/javascript" src="js/angular.min.js"></script>
    <script type="text/javascript" src="js/angular-route.min.js"></script>
+   <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
    <script type="text/javascript" src="js/simplePagination.js"></script>
 
 

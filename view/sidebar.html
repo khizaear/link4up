@@ -87,8 +87,9 @@ cursor:pointer !important;
 			</div>
 			<div id="collapsesub{{y.subcat_id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{y.subcat_id}}">
 			  <div class="panel-body nopad">
-			  <li  class="catlist" ng-repeat="z in y.precat"><a href="#/subcat/{{z.precat_id}}">{{z.pre_catname}} </a></li>
-				 </div>
+				<li  ng-class="{active : activeValue === z.precat_id}"  ng-click="clickedPage(z.precat_id)"  class="catlist" ng-repeat="z in y.precat">
+				<a   href="#/subcat/{{z.precat_id}}">{{z.pre_catname}} </a></li>
+			  </div>
 			</div>
 		  </div>
 			

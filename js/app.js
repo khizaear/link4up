@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute','simplePagination']);
+var app = angular.module('app', ['ngRoute','simplePagination','ngSanitize']);
 
 app.config(['$routeProvider',
   function($routeProvider) {
@@ -7,10 +7,7 @@ app.config(['$routeProvider',
         templateUrl: 'view/temp.html',
         controller: 'index'
       }).
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
+
       when('/subcat/:subcatId', {
         templateUrl: 'view/subcat.html',
         controller: 'subcat'
@@ -18,6 +15,14 @@ app.config(['$routeProvider',
       when('/cat/:catId', {
         templateUrl: 'view/catprod.html',
         controller: 'catprod'
+      }).
+      when('/about-us', {
+        templateUrl: 'view/about-us.html',
+        controller: 'pageabout'
+      }).
+      when('/finished-leather', {
+        templateUrl: 'view/finshedleathers.html',
+        controller: 'finshedleathers'
       }).
       otherwise({
         redirectTo: '/'
@@ -46,12 +51,24 @@ app.config(['$routeProvider',
 		$http.get('cake/product/getprod/'+cat).success(function(data, status, headers, config) {			
 			$scope.datas=data;	
 		});		
-	});
-
-	
+	});	
 	app.controller('categories', function($scope,$http) {		
 		$http.get('cake/cat/getcat').success(function(data, status, headers, config) {
 			$scope.datas=data;	
+		});
+		$scope.clickedPage = function(value){
+			$scope.activeValue = value;
+
+		};
+	});
+	app.controller('pageabout', function($scope,$http,$sce) {		
+		$http.get('cake/admin/get_pageabout').success(function(data, status, headers, config) {			
+			$scope.datas=$sce.trustAsHtml(data.about);		
+		});		
+	});
+	app.controller('finshedleathers', function($scope,$http,$sce) {		
+		$http.get('cake/admin/get_pagefinishedleather').success(function(data, status, headers, config) {			
+			$scope.datas=$sce.trustAsHtml(data.about);		
 		});		
 	});
 	

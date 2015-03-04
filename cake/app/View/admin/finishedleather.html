@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="<?php echo Router::url('ckeditor/samples');?>/sample.css">
+
+<div class="col-lg-12">
+
+<form id="f1" method="post" action="<?php echo Router::url('/admin/pagefinishedleather');?>">
+ <textarea class="ckeditor" name="content" style="height:500px;" id="textarea" placeholder="Enter text ..."><?php echo $data; ?></textarea>
+    <br><input type="submit" value="Update" class="btn btn-success">
+  <input type="reset" value="Reset form!" class="btn btn-danger">
+</form>
+</div>
+
+
+<!--<script src="<?php echo Router::url('/wysiwyg/');?>parser_rules/advanced.js"></script> -->
+
+<script src="<?php echo Router::url('/ckeditor/');?>/ckeditor.js"></script>
+
+
+

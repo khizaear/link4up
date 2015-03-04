@@ -211,10 +211,32 @@ class AdminController extends AppController {
 		if($this->data){
 			$file = 'aboustus.txt';
 			file_put_contents($file,$this->data['content']);
-			
 		}
 		$this->set('data',$data);
 	}
+	public function pagefinishedleather(){
+		$data=$file = file_get_contents('/finished-leather.txt', true);
+		if($this->data){
+			$file = 'finished-leather.txt';
+			file_put_contents($file,$this->data['content']);
+		}
+		$this->set('data',$data);
+		$this->render("finishedleather");
+	}
+	public function  get_pagefinishedleather(){
+		$this->autoRender=false;
+		$data['about']=$file = file_get_contents('/finished-leather.txt', true);		
+		echo json_encode($data);
+		//return $data;
+	}
+	public function get_pageabout(){
+		$this->autoRender=false;
+		$data['about']=$file = file_get_contents('/aboustus.txt', true);		
+		echo json_encode($data);
+		//return $data;
+	}
+	
+	
 	public function getall(){
 		$this->autoRender=false;
 		$this->prods->recursive=-1;
