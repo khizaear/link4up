@@ -207,17 +207,17 @@ class AdminController extends AppController {
 		$this->set('datas',$datas);
 	}
 	public function pageabout(){
-		$data=$file = file_get_contents('/aboustus.txt', true);
-		if($this->data){
-			$file = 'aboustus.txt';
+		$file = 'aboustus.txt';
+		$data= file_get_contents($file, true);
+		if($this->data){		
 			file_put_contents($file,$this->data['content']);
 		}
 		$this->set('data',$data);
 	}
 	public function pagefinishedleather(){
-		$data=$file = file_get_contents('/finished-leather.txt', true);
-		if($this->data){
-			$file = 'finished-leather.txt';
+		$file = 'finished-leather.txt';
+		$data =file_get_contents($file, true);
+		if($this->data){			
 			file_put_contents($file,$this->data['content']);
 		}
 		$this->set('data',$data);
@@ -225,13 +225,15 @@ class AdminController extends AppController {
 	}
 	public function  get_pagefinishedleather(){
 		$this->autoRender=false;
-		$data['about']=$file = file_get_contents('/finished-leather.txt', true);		
+		$file =Router::url('/finished-leather.txt',TRUE);
+		$data['about']= file_get_contents($file, true);		
 		echo json_encode($data);
 		//return $data;
 	}
 	public function get_pageabout(){
 		$this->autoRender=false;
-		$data['about']=$file = file_get_contents('/aboustus.txt', true);		
+		$file =Router::url('/aboustus.txt',TRUE);
+		$data['about']= file_get_contents($file, true);		
 		echo json_encode($data);
 		//return $data;
 	}
@@ -258,5 +260,20 @@ class AdminController extends AppController {
 		$this->autoRender=false;
 		$datas=$this->precat->findByprecat_id($id);
 		return $datas['precat']['pre_catname'];
+	}
+	
+	public function cuser($id="Khizar"){
+	$this->autoRender=false;
+	$this->Session->write('user',$id);
+
+	}
+	public function luser(){
+	$this->autoRender=false;
+	$this->Session->write('user','');
+	}	
+	public function guser(){
+	$this->autoRender=false;
+	$data['user']=$this->Session->read('user');
+	echo json_encode($data);
 	}
 }

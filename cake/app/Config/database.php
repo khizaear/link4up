@@ -72,9 +72,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'link4up',
+		'login' => 'linkup_user',
+		'password' => 'hosting@123',
+		'database' => 'linkup_db',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
