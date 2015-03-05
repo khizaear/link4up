@@ -32,7 +32,7 @@
 	</div>
 </div>
 </header>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" ng-controller="user">
       <div class="container">
 	   <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
@@ -61,7 +61,9 @@
           </ul>
         </li>
           </ul>
-
+			<ul class="nav navbar-nav pull-right" >
+            <li class="active"><a href="#/" ng-bind="loguser.user"></a></li>
+			</ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>

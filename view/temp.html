@@ -10,6 +10,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 
 <div class="row">
 		<legend><h4> <i class="fa fa-shopping-cart"></i> New Products</h4></legend>
+
 </div>
 <div class="row">  
    <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
@@ -36,8 +37,86 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 </div>
 
 </div>
+<p>&nbsp;</p>
+<input type="hidden" id="datas" ng-bind="datas | json">
 <div class="row">
-	<div class="col-lg-12">
-	<div ng-include src="'view/manknit.html'"></div>
-	</div>
+<div class="panel panel-carousel">
+	<div class="panel-heading"><h3>Recent Products</h3></div>
+	<div class="panel-body"><div id="carousel-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" id="target">
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" data-href="#carousel-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" data-href="#carousel-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
 </div>
+
+</div>
+<script>
+
+$(document).ready(function(){
+	setTimeout(function(){
+		var data=jQuery.parseJSON($("#datas").text());
+		alert(data);
+		getSliderContent(data, '#target', 4); 
+	},1000);
+  
+
+function getThumb(obj){
+	var $holder = $('<div/>');
+	$holder.addClass('col-sm-6 col-md-3 itms ng-scope');
+	var $thumb = $('<div/>').addClass('thumbnail');
+	var $anchor = $('<a/>').attr({"data-title":"", "data-lightbox":"image-1", "href":"cake/prodimg/"+obj.prod_img});
+	var $img = $('<img/>').attr({alt:"", src:"cake/prodimg/thumb-"+obj.prod_img});
+	var $caption = $('<div/>').addClass('caption');
+	var $center = $('<center/>');
+	var $p = $('<p/>');
+	$anchor.append($img);
+	$thumb.append($anchor);
+	$center.append($p);
+	$caption.append($center);
+	$holder.append($caption);
+	$holder.append($thumb);
+	return $holder;                
+}
+
+function getListStructure(){
+	$itemContainer = $('<div/>');
+	$itemContainer.attr('class', 'item');
+	return $itemContainer;
+}
+
+function getSliderContent(data, target, limitN){
+	limitN = (limitN == undefined) ? 4 : limitN;
+	limitCounter = 0;
+	$itemContainer = getListStructure();
+	$itemContainer.addClass("active");
+	for(i in data){
+		var $target = $(target);
+		var isLastB = (data.length == (i+1)); 
+		limitCounter++
+		var thumbO = data[i].prods;
+		var $thumbH = getThumb(thumbO);		
+		$itemContainer.append($thumbH);		
+		if(limitCounter >= limitN){
+			$target.append($itemContainer);
+			$itemContainer = getListStructure();
+			limitCounter = 0;
+		}else if(isLastB){
+			$target.append($itemContainer);
+		}
+	}
+}	
+});
+
+</script>

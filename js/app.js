@@ -66,9 +66,10 @@ app.config(['$routeProvider',
 			$scope.datas=$sce.trustAsHtml(data.about);		
 		});		
 	});
-	app.controller('finshedleathers', function($scope,$http,$sce) {		
+	app.controller('finshedleathers', function($scope,$http,$sce, $location) {		
 		$http.get('cake/admin/get_pagefinishedleather').success(function(data, status, headers, config) {			
-			$scope.datas=$sce.trustAsHtml(data.about);		
+		$scope.datas=$sce.trustAsHtml(data.about);
+
 		});		
 	});
 	
@@ -79,7 +80,13 @@ app.config(['$routeProvider',
 	});
 	
 	
-		app.controller('banner', function($scope,$location,$route) {		
-		 $scope.locations = window.location;
-		});
+	app.controller('banner', function($scope,$location,$route) {		
+	 $scope.locations = window.location;
+	});
+		
+	app.controller('user', function($scope,$location,$route,$http) {		
+	 $http.get('cake/admin/guser/').success(function(data, status, headers, config) {
+			$scope.loguser=data;	
+		});	
+	});
 	

@@ -16,7 +16,7 @@
   height: 500px;
   max-width: none;
 }
-.carousel{
+.carousel1{
 margin-top:-20px;
 padding:0;
 background-color:#EAEAEA
@@ -84,13 +84,30 @@ cursor:pointer;
 }
 .catlist.ng-scope.active {
 background: linear-gradient(to bottom, rgba(169, 3, 41, 1) 0%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-
-
-
-
 }
 .catlist.ng-scope.active a{
 color:#FFFFFF;
+}
+.panel-carousel {
+    border-color: #000;
+}
+.panel-carousel > .panel-heading {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.panel-carousel > .panel-body {
+padding:0 !important;
+}
+.panel-carousel > .panel-heading > h3 {
+margin:0 !important;
+}
+
+
+
+.panel-carousel > .left.carousel-control{
+    background: none  !important;
+    color: #000;
 }
 	</style>
        
@@ -106,7 +123,7 @@ color:#FFFFFF;
 <body>
 <div ng-include src="'view/header.html'"></div>
 
-<div class="carousel" ng-controller="banner" ng-show="locations.href==='http://localhost/link4up/#/'">
+<div class="carousel1" ng-controller="banner" ng-show="locations.href==='http://localhost/link4up/#/'">
 
 
 <div data-example-id="carousel-with-captions">
