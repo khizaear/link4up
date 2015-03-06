@@ -8,12 +8,14 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 {{eid}} / {{etype}}
 
 </style>
+<div ng-hide="!datas.prods">
 <div class="row">
-		<legend><h4> <i class="fa fa-shopping-cart"></i> New Products</h4></legend>
+		<legend><h4> <i class="fa fa-shopping-cart"></i> {{datas.det.cat}} >  {{datas.det.subcat}} > {{datas.det.precat}}</h4></legend>
 </div>
 
-<div class="row">  
-   <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas">
+<div class="row" >  
+
+   <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas.prods">
       <div class="thumbnail" >
 		<a href="cake/prodimg/{{itm.prods.prod_img}}" data-lightbox="image-1" data-title="{{itm.prods.prod_title}}">
          <img  src="cake/prodimg/thumb-{{itm.prods.prod_img}}" alt="{{itm.prods.prod_title}}">
@@ -24,8 +26,9 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
       </div>
    </div>
 </div>
-<div class="row" ng-show="!datas.length">  
-	<div class="well well-lg"><h2>No Products Found !</div>
+
 </div>
 
-
+<div class="row" ng-show="!datas.prods">
+<div class="well well-sm"><h2>No Products Found</h2></div>
+</div>

@@ -35,7 +35,7 @@ app.config(['$routeProvider',
 			console.log(data.length);
 
 			$scope.datas=data;	
-			$scope.pagination = Pagination.getNew();
+			$scope.pagination = Pagination.getNew(24);
 			$scope.pagination.numPages = Math.ceil($scope.datas.length/$scope.pagination.perPage);
 
 		});		

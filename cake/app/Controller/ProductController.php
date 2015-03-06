@@ -16,7 +16,14 @@ class ProductController extends AppController {
 		$this->autoRender=false;
 		$subcat=$this->request->params['pass'][0];
 		$this->prods->recursive=-1;
-		$data=$this->prods->find('all',array('conditions' => array('prod_precat_id' => $subcat)));
+		$data['prods']=$this->prods->find('all',array('conditions' => array('prod_precat_id' => $subcat)));
+		/* pr($data[0]['prods']['prod_cat_id']);
+ 
+
+		echo json_encode($det); */
+		$data['det']['cat']=$this->requestAction('/admin/getcatname/'.$data['prods'][0]['prods']['prod_cat_id']);
+		$data['det']['subcat']=$this->requestAction('/admin/getsubcatname/'.$data['prods'][0]['prods']['prod_subcat_id']);
+		$data['det']['precat']=$this->requestAction('/admin/getprecatname/'.$data['prods'][0]['prods']['prod_precat_id']);
 		echo json_encode($data);
 	}
 	
