@@ -68,13 +68,24 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
+	/* public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
 		'database' => 'link4up',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+	*/
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'linkup_user',
+		'password' => 'hosting@123',
+		'database' => 'linkup_db',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
