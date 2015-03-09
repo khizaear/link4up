@@ -49,7 +49,8 @@ app.config(['$routeProvider',
 	app.controller('subcat', function($scope,$http,$routeParams, $route) {	
 		var cat=$routeParams.subcatId
 		$http.get('cake/product/getprod/'+cat).success(function(data, status, headers, config) {			
-			$scope.datas=data;	
+			$scope.datas=data;
+					
 		});		
 	});	
 	app.controller('categories', function($scope,$http) {		
@@ -84,9 +85,5 @@ app.config(['$routeProvider',
 	 $scope.locations = window.location;
 	});
 		
-	app.controller('user', function($scope,$location,$route,$http) {		
-	 $http.get('cake/admin/guser/').success(function(data, status, headers, config) {
-			$scope.loguser=data;	
-		});	
-	});
+
 	

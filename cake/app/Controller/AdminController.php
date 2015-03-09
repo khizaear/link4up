@@ -3,7 +3,7 @@
 class AdminController extends AppController {
 	
 	var $ext=".html";
-	var $uses=array('prods','cat','subcat','precat','admin');
+	var $uses=array('prods','cat','subcat','precat','admin','content');
 	//var $scaffold;
 	//public $components = array('ImageCropResize.Image');
 	public function login(){
@@ -206,7 +206,33 @@ class AdminController extends AppController {
 		}
 		$this->set('datas',$datas);
 	}
-	public function pageabout(){
+	public function contents(){
+		$data=$this->content->find('all');
+		$this->set('data',$data);
+
+	}
+	public function editcont($id=1){
+	$data=$this->content->findBycon_id($id);
+	$this->set('data',$data);
+	$this->render('page');
+	}
+	public function getcont($id=1){
+		
+		$data=$this->content->findBycon_id($id);
+		echo $data['content']['con_text'];
+		$this->autoRender=false;
+	}
+	public function savecont(){
+
+		$this->content->id=$this->data['cont'];
+		$data['con_text']=$this->data['content'];
+		$this->content->save($data);
+		$this->autoRender="false";
+		$this->redirect(array('controller' => 'admin', 'action' => 'editcont',$this->data['cont']));
+
+
+	}
+/* 	public function pageabout(){
 		$file = 'aboustus.txt';
 		$data= file_get_contents($file, true);
 		if($this->data){		
@@ -222,7 +248,7 @@ class AdminController extends AppController {
 		}
 		$this->set('data',$data);
 		$this->render("finishedleather");
-	}
+	} */
 	public function  get_pagefinishedleather(){
 		$this->autoRender=false;
 		$file =Router::url('/finished-leather.txt',TRUE);
@@ -262,18 +288,4 @@ class AdminController extends AppController {
 		return $datas['precat']['pre_catname'];
 	}
 	
-	public function cuser($id="Khizar"){
-	$this->autoRender=false;
-	$this->Session->write('user',$id);
-
-	}
-	public function luser(){
-	$this->autoRender=false;
-	$this->Session->write('user','');
-	}	
-	public function guser(){
-	$this->autoRender=false;
-	$data['user']=$this->Session->read('user');
-	echo json_encode($data);
-	}
 }

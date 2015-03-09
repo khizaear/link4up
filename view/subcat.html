@@ -9,6 +9,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 
 </style>
 <div ng-hide="!datas.prods">
+
 <div class="row">
 		<legend><h4> <i class="fa fa-shopping-cart"></i> {{datas.det.cat}} >  {{datas.det.subcat}} > {{datas.det.precat}}</h4></legend>
 </div>
@@ -16,7 +17,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 <div class="row" >  
 
    <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas.prods">
-      <div class="thumbnail" >
+      <div class="thumbnail" alt="{{itm.prods.prod_cat_id}}" >
 		<a href="cake/prodimg/{{itm.prods.prod_img}}" data-lightbox="image-1" data-title="{{itm.prods.prod_title}}">
          <img  src="cake/prodimg/thumb-{{itm.prods.prod_img}}" alt="{{itm.prods.prod_title}}">
 		 </a>
@@ -26,9 +27,43 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
       </div>
    </div>
 </div>
-
+<p>&nbsp;</p>
+<div class="row" style="display:none" id="dg">
+<div class="panel panel-carousel">
+<div class="panel panel-heading"><h3>{{datas.det.cat}}</h3></div>
+<div class="panel-body">	
+	<div class="col-md-3" id="gimg">
+	<img src="" id="imm"/>
+	</div>
+	<div class="col-md-8 col-sm-offset-1 " id="gcont">
+		
+	</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="row" ng-show="!datas.prods">
 <div class="well well-sm"><h2>No Products Found</h2></div>
 </div>
+
+<script>
+
+$(document).ready(function(){
+	setTimeout(function(){
+		var daa=$(".thumbnail:first-child").attr("alt")
+		var timg=$(".thumbnail:first-child").find("img").attr("src");		
+		$.ajax({
+			url:"cake/admin/getcont/"+daa,
+			cache:true,
+			success:function(data){
+				$("#dg").css({"display":""});
+				$("#gcont").html(data);
+				$("#imm").attr("src",timg)
+			}
+		});
+		//getSliderContent(data, '#target', 4); 
+	},1000);
+  
+});
+</script>
