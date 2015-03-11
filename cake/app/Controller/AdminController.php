@@ -3,7 +3,7 @@
 class AdminController extends AppController {
 	
 	var $ext=".html";
-	var $uses=array('prods','cat','subcat','precat','admin','content');
+	var $uses=array('prods','cat','subcat','precat','admin','content','page');
 	//var $scaffold;
 	//public $components = array('ImageCropResize.Image');
 	public function login(){
@@ -232,38 +232,40 @@ class AdminController extends AppController {
 
 
 	}
-/* 	public function pageabout(){
-		$file = 'aboustus.txt';
-		$data= file_get_contents($file, true);
-		if($this->data){		
-			file_put_contents($file,$this->data['content']);
-		}
+
+	public function spage(){
+		$data=$this->page->find('list');
 		$this->set('data',$data);
+	//	pr($data);
+	//	$this->autoRender=false;
+		
 	}
-	public function pagefinishedleather(){
-		$file = 'finished-leather.txt';
-		$data =file_get_contents($file, true);
-		if($this->data){			
-			file_put_contents($file,$this->data['content']);
-		}
-		$this->set('data',$data);
-		$this->render("finishedleather");
-	} */
-	public function  get_pagefinishedleather(){
+	public function getpage($id=NULL){
+		$data=$this->page->findBypage_id($id);
 		$this->autoRender=false;
-		$file =Router::url('/finished-leather.txt',TRUE);
-		$data['about']= file_get_contents($file, true);		
 		echo json_encode($data);
-		//return $data;
-	}
-	public function get_pageabout(){
-		$this->autoRender=false;
-		$file =Router::url('/aboustus.txt',TRUE);
-		$data['about']= file_get_contents($file, true);		
-		echo json_encode($data);
-		//return $data;
+		
 	}
 	
+		public function editpage($id=1){
+		$data=$this->page->findBypage_id($id);		
+		$this->set('data',$data);
+		if($this->data){
+			$this->page->id=$this->data['page'];
+			$rec['page_content']=$this->data['content'];
+			$this->page->save($rec);
+			$this->redirect(array('controller' => 'admin', 'action' => 'editpage',$this->data['page']));
+		}
+		//$this->autoRender=false;
+		
+	}
+
+	public function delfunc($model='prods', $id=10){
+		$data=$this->$model->delete($id);
+		$this->autoRender=FALSE;
+		echo $data;
+		
+	}
 	
 	public function getall(){
 		$this->autoRender=false;

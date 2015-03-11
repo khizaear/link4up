@@ -40,10 +40,13 @@ app.config(['$routeProvider',
 
 		});		
 	});
-	app.controller('catprod', function($scope,$http,$routeParams, $route) {	
+	app.controller('catprod', function($scope,$http,$routeParams, $route, Pagination) {	
 		var subcat=$routeParams.catId
 		$http.get('cake/product/catprod/'+subcat).success(function(data, status, headers, config) {			
 			$scope.datas=data;	
+			$scope.pagination = Pagination.getNew(24);
+			$scope.pagination.numPages = Math.ceil($scope.datas.length/$scope.pagination.perPage);	
+			
 		});		
 	});
 	app.controller('subcat', function($scope,$http,$routeParams, $route) {	
@@ -67,6 +70,14 @@ app.config(['$routeProvider',
 			$scope.datas=$sce.trustAsHtml(data.about);		
 		});		
 	});
+	
+	app.controller('footercontent', function($scope,$http,$sce) {		
+		$http.get('cake/admin/getpage/2').success(function(data, status, headers, config) {			
+			$scope.datas=data;		
+		});		
+	});
+	
+	
 	app.controller('finshedleathers', function($scope,$http,$sce, $location) {		
 		$http.get('cake/admin/get_pagefinishedleather').success(function(data, status, headers, config) {			
 		$scope.datas=$sce.trustAsHtml(data.about);
@@ -80,10 +91,20 @@ app.config(['$routeProvider',
 		});		
 	});
 	
+	app.controller('headcat', function($scope,$http) {		
+		$http.get('cake/cat/getcat').success(function(data, status, headers, config) {
+			$scope.datas=data;	
+		});
+		$scope.clickedPage = function(value){
+			$scope.activeValue = value;
+
+		};
+	});
 	
 	app.controller('banner', function($scope,$location,$route) {		
 	 $scope.locations = window.location;
 	});
+	
 		
 
 	

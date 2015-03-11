@@ -31,7 +31,7 @@ class ProductController extends AppController {
 		$this->autoRender=false;
 		//$subcat=$this->request->params['pass'][0];
 		$this->prods->recursive=-1;		
-		$data=$this->prods->find('all',array('conditions' => array('prod_cat_id' => $id)));
+		$data=$this->prods->find('all',array('conditions' => array('prod_subcat_id' => $id)));
 		echo json_encode($data);
 	}
 	
@@ -68,7 +68,7 @@ class ProductController extends AppController {
 	public function getall(){
 		$this->autoRender=false;
 		$this->prods->recursive=-1;
-		$data=$this->prods->find('all');
+		$data=$this->prods->find('all' ,array('limit' => 48));
 		echo json_encode($data);
 	}		
 

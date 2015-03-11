@@ -125,6 +125,26 @@ color:#000;
 padding:5px;
 background-color:#FFF;
 }
+#footer {
+    background: none repeat scroll 0 0 #232323;
+    min-height: 30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+	color:#FFFFFF;
+}
+footer .col ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+footer .col ul li {
+    color: #8f8f8f;
+}
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
 	</style>
        
 
@@ -139,7 +159,7 @@ background-color:#FFF;
 <body>
 <div ng-include src="'view/header.html'"></div>
 
-<div class="carousel1" ng-controller="banner" ng-show="locations.href==='http://localhost/link4up/#/'">
+<div class="carousel1" ng-controller="banner" ng-show="locations.href==='http://www.linkup4apparels.com/#/'">
 
 
 <div data-example-id="carousel-with-captions">
@@ -210,8 +230,10 @@ background-color:#FFF;
 	</div>
 	
 </section>
-<section id="footer" class="footer">
-	<p><center>All Rights Reserved</center></p>
+<section id="footer">
+
+<div ng-include src="'view/footer.html'"></div>
+
 </section>
 </body>
 

@@ -1,16 +1,11 @@
 <link rel="stylesheet" href="<?php echo Router::url('ckeditor/samples');?>/sample.css">
-
 <div class="col-lg-12">
 <legend><?php echo $data['cat']['cat_name']; ?></legend>
 <form id="f1" method="post" action="<?php echo Router::url('/admin/savecont');?>">
 <input type="hidden" name="cont" value="<?php echo $data['content']['con_id']; ?>">
 <textarea name="content" style="height:500px;" id="textarea" placeholder="Enter text ..." class="ckeditor"><?php echo $data['content']['con_text']; ?></textarea>
-    <br><input type="submit" value="Update" class="btn btn-success">
-  <input type="reset" value="Reset form!" class="btn btn-danger">
+<br><input type="submit" value="Update" class="btn btn-success">
+<input type="reset" value="Reset form!" class="btn btn-danger">
 </form>
 </div>
-
-
 <script src="<?php echo Router::url('/ckeditor/');?>/ckeditor.js"></script>
-
-

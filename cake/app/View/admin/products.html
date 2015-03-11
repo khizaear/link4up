@@ -22,7 +22,7 @@
 							<td>'.$prod['subcat']['subcat_name'].'</td>
 							<td>'.$prod['precat']['pre_catname'].'</td>
 							<td><img src="'.Router::url('/prodimg/thumb-').$prod['prods']['prod_img'].'" width="100" height="100" /><br />'.$prod['prods']['prod_img'].'</td>
-							<td><a href="'.Router::url('/admin/editprod/').$prod['prods']['prod_id'].'" class="btn btn-sm btn-info">Edit</a></td>
+							<td><a  href="'.Router::url('/admin/editprod/').$prod['prods']['prod_id'].'" class="btn btn-sm btn-info">Edit</a> | <a data-model="prods" data-id="'.$prod['prods']['prod_id'].'" href="javascript:" class="btn btn-sm btn-danger delete" >delete</a>  </td>
 						 </tr>';
 					$i++;
 				}
@@ -35,5 +35,22 @@
 <script>
 $(document).ready(function(){
 	$("#prod").dataTable();
+	
+	 $('a.delete').click(function(e) {
+		var model=$(this).attr('data-model');
+		var delid=$(this).attr('data-id');
+        e.preventDefault();
+        if (window.confirm("Are you sure?")) {
+			$.ajax({
+				url:'../delfunc/'+model+'/'+delid,
+				success:function(data){
+					alert("Completed" + data);
+					location.href = window.location;
+				}
+			})
+           // location.href = this.href;
+        }
+    });
+
 });
 </script>
