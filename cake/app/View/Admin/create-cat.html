@@ -1,0 +1,23 @@
+<div class="col-lg-8 ">
+	<form action="<?php echo  Router::url('/admin/newcat/'); ?>" method="post" enctype="multipart/form-data">
+	<div class="panel panel-paypal">
+		
+		<div class="panel-heading"><h2>Create New Category</h2></div>
+		<div class="panel-body">		
+			<div class="form-group">
+				<label>Category Name</label>
+				<input class="form-control" name="category" id="category" required>
+			</div>
+
+		
+		</div>
+		<div class="panel-footer">
+			<input class="btn btn-success btn-lg" type="submit" value="Create" name="b1">
+		</div>
+		<?php 
+			if(isset($msg))
+				pr($msg);
+		?>
+	</div>
+	</form>
+</div>

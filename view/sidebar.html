@@ -48,7 +48,7 @@ cursor:pointer !important;
 
 }
 </style>
-<div class="col-md-3" ng-controller="categories">
+<div class="col-md-3 hidden-xs hidden-sm" ng-controller="categories">
 		<!-- <ul class="nav nav-pills nav-stacked sibebarbg"  role="menu" aria-labelledby="dLabel">
 			<li class="active"><a href="javascript:"><strong>Home</strong></a></li>
 			<li class="dropdown-menu"  ng-repeat="x in datas">
@@ -80,7 +80,7 @@ cursor:pointer !important;
 			<div class="panel panel-default subc" ng-repeat="y in x.subcat">
 			<div class="panel-heading subhead" role="tab" id="heading{{y.subcat_id}}">
 			  <h4 class="panel-title">
-				<a class="collapsed" data-toggle="collapse" data-parent="#accordion{{x.cat.cat_id}}" data-href="#collapsesub{{y.subcat_id}}" aria-expanded="false" aria-controls="collapsesub{{y.subcat_id}}">
+				<a class="collapsed catlink"   data-link="#/cat/{{y.subcat_id}}" data-toggle="collapse" data-parent="#accordion{{x.cat.cat_id}}" data-href="#collapsesub{{y.subcat_id}}" aria-expanded="false" aria-controls="collapsesub{{y.subcat_id}}">
 				  {{y.subcat_name}}
 				</a>
 			  </h4>

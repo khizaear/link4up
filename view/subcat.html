@@ -1,4 +1,3 @@
-
 <style>
 .itms:hover{
 background-color:#EAEAEA !important;
@@ -16,7 +15,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 
 <div class="row" >  
 
-   <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas.prods">
+   <div class="col-sm-6 col-md-4 col-xs-6 itms"  ng-repeat="itm in datas.prods">
       <div class="thumbnail" alt="{{itm.prods.prod_cat_id}}" >
 		<a href="cake/prodimg/{{itm.prods.prod_img}}" data-lightbox="image-1" data-title="{{itm.prods.prod_title}}">
          <img  src="cake/prodimg/thumb-{{itm.prods.prod_img}}" alt="{{itm.prods.prod_title}}">
@@ -28,19 +27,52 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
    </div>
 </div>
 <p>&nbsp;</p>
-<div class="row" style="display:none" id="dg">
-<div class="panel panel-carousel">
-<div class="panel panel-heading"><h3>{{datas.det.cat}}</h3></div>
-<div class="panel-body">	
-	<div class="col-md-3" id="gimg">
-	<img src="" id="imm"/>
-	</div>
-	<div class="col-md-8 col-sm-offset-1 " id="gcont">
+	<div class="row" style="display:none" id="dg">
 		
+	<div role="tabpanel">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="javascript:" data-href="#home" aria-controls="home" role="tab" data-toggle="tab"><strong>{{datas.det.cat}}</strong></a></li>
+			<li role="presentation" ><a href="javascript:" data-href="#enquiry" aria-controls="enquiry" role="tab" data-toggle="tab"><strong>Enquiry</strong></a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="home">
+				<div class="col-md-3" id="gimg">
+					<p>&nbsp;</p>
+					<img class="imm" src="" />
+				</div>
+				<div class="col-md-8 col-sm-offset-1 " id="gcont"></div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="enquiry">
+				<div class="col-md-3" >
+					<p>&nbsp;</p>
+					<img class="imm"  src="" />
+					<div class="well well-sm">Enquire this product</div>
+				</div>
+				<div class="col-md-8 col-sm-offset-1">
+				<p>&nbsp;</p>
+				<form name="enquiry" method="post">
+					<div class="form-group">
+						<label>Name:</label>
+						<input type="text" class="form-control" name="name" ng-model="user.name">						
+						<label>E-mail:</label>
+						<input type="email" class="form-control" name="email" ng-model="user.email">						
+						<label>Mobile:</label>
+						<input type="text" class="form-control" name="mobile" ng-model="user.mobile">						
+						<label>Product Enquired:</label>
+						<p>{{datas.det.cat}} > {{datas.det.subcat}} > <strong>{{datas.det.precat}}</strong></p>
+						<label>Message:</label>
+						<textarea class="form-control" name="message" ng-model="user.message"></textarea>
+						<hr />
+						<button class="btn btn-primary" name="submit">Send</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-</div>
-</div>
+	</div>
 </div>
 
 <div class="row" ng-show="!datas.prods">
@@ -58,8 +90,8 @@ $(document).ready(function(){
 			cache:true,
 			success:function(data){
 				$("#dg").css({"display":""});
-				$("#gcont").html(data);
-				$("#imm").attr("src",timg)
+				$("#gcont").html("<p>&nbsp;</p>"+data);
+				$("img.imm").attr("src",timg)
 			}
 		});
 		//getSliderContent(data, '#target', 4); 

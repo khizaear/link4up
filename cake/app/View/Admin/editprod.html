@@ -1,0 +1,91 @@
+<div class="col-lg-12">
+	<form action="<?php echo  Router::url('/admin/update/'); ?>" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="prod" value="<?php echo $datas['prods']['prod_id'] ?>" >
+	<div class="panel panel-paypal">
+		
+		<div class="panel-heading"><h2>Edit Product</h2></div>
+		<div class="panel-body">		
+			<div class="form-group">
+				<label>Category</label>
+				<Select name="category" id="category" class="form-control" required="" >
+					<option style="font-weight:bolder" value='<?php echo $datas['prods']['prod_cat_id'] ?>' selected><?php echo  $this->requestAction('admin/getcatname/'.$datas['prods']['prod_cat_id']); ?>					</option>
+					<?php 
+						foreach($datas['cat'] as $ck=>$cv){
+							echo '<option value="'.$ck.'">'.$cv.'</option>';							
+						}
+					?>
+				</select>
+			</div>
+			<div class="form-group">
+			<div id="subcat">
+				<label>Sub Category</label>
+				<select required="" name="subcat" id="subcat" onchange="pop_precat(this.value)" class="form-control">
+						<option style="font-weight:bolder" value='<?php echo $datas['prods']['prod_subcat_id'] ?>' selected><?php echo  $this->requestAction('admin/getsubcatname/'.$datas['prods']['prod_subcat_id']); ?>					</option>
+				</select>
+			</div>
+			</div>
+			<div class="form-group">
+			<div id="precat">
+			<label>Precategory</label>
+			<select required="" name="precat" id="precat" class="form-control">
+				<option style="font-weight:bolder" value='<?php echo $datas['prods']['prod_precat_id'] ?>' selected><?php echo  $this->requestAction('admin/getprecatname/'.$datas['prods']['prod_precat_id']); ?>					</option>				
+			</select>
+			</div>
+			</div>
+			<div class="thumbnail" id="curimg">
+				<label>Current Image </label> <span><a href="javascript:" class="btn btn-danger pull-right" id="remimg">Remove</a></span>
+				<img src="<?php echo  Router::url('/prodimg/').$datas['prods']['prod_img']; ?>">
+			</div>
+			<div class="form-group" id="showimg" style="display:none">
+				<label >Choose  New Prodcut Image</label>
+				<input type="file" name="image"  required>
+				<input type="button" class="btn btn-sm btn-primary" value="cancel & Show Previous Image" id="cannew">
+			</div>
+		
+		</div>
+		<div class="panel-footer">
+			<input class="btn btn-success btn-lg" type="submit" value="Update Product" name="b1">
+		</div>
+		
+	</div>
+	</form>
+</div>
+<script>
+$(document).ready(function(){
+	$("#remimg").click(function(){
+		$("#curimg").fadeToggle(function(){
+			$("#showimg").fadeToggle('slow');
+		});
+		
+	});	
+	$("#cannew").click(function(){
+		$("#showimg").fadeToggle(function(){
+			$("#curimg").fadeToggle('slow');
+		});
+		
+	});
+	$("#category").change(function(){
+		cat=$("#category").val();
+		$.ajax({
+			url:"<?php echo  Router::url('/admin/get_subcat/'); ?>"+cat,
+			method: 'GET',
+			success:function(data){
+				$("#subcat").html(data)
+			},error:function(err){
+				console.log("Error Reason is "+err.statusText);
+			}
+		});
+	});
+});
+function pop_precat(val){
+	$.ajax({
+		url:"<?php echo  Router::url('/admin/get_precat/'); ?>"+val,
+		method: 'GET',
+		success:function(subdata){
+			$("#precat").html(subdata)
+		},error:function(err){
+			alert(err);
+		}
+	});
+}
+</script>

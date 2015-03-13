@@ -9,7 +9,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 
 <input type="hidden" id="datas" ng-bind="datas | json">
 <div class="row">
-<div class="panel panel-carousel">
+<div class="panel panel-carousel hidden-xs hidden-sm">
 	<div class="panel-heading"><h3>Recent Products 
 	<span class="pull-right">
 		<a class="car-control" data-href="#carousel-generic" role="button" data-slide="prev">  
@@ -44,7 +44,7 @@ box-shadow: 0 10px 5px 2px rgba(25,25,25,.2);
 
 </div>
 <div class="row">  
-   <div class="col-sm-6 col-md-3 itms"  ng-repeat="itm in datas | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+   <div class="col-sm-6 col-md-4 col-xs-6 itms"  ng-repeat="itm in datas | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
             <div class="thumbnail" >
 		<a href="cake/prodimg/{{itm.prods.prod_img}}" data-lightbox="image-1" data-title="{{itm.prods.prod_title}}">
          <img  src="cake/prodimg/thumb-{{itm.prods.prod_img}}" alt="{{itm.prods.prod_title}}">

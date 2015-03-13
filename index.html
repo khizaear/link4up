@@ -154,12 +154,14 @@ footer a {
 
 
 <!-- dd menu -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 <div ng-include src="'view/header.html'"></div>
 
-<div class="carousel1" ng-controller="banner" ng-show="locations.href==='http://www.linkup4apparels.com/#/'">
+<div class="carousel1 hidden-xs hidden-sm" ng-controller="banner" ng-show="locations.href==='http://www.linkup4apparels.com/#/'">
 
 
 <div data-example-id="carousel-with-captions">
@@ -252,6 +254,14 @@ footer a {
 
 
 <script>
+$(document).ready(function(){
+	$(".catlink").click(function(){
+		var linker=$(this).attr("data-link");
+		alert(linker);
+		window.location.href=linker;
+	});
+});
+
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
 	if(scroll > 200){	

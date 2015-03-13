@@ -832,7 +832,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
         var b = this.element,
             c = b.closest("ul:not(.dropdown-menu)"),
             d = b.data("target");
-        if (d || (d = b.attr("href"), d = d && d.replace(/.*(?=#[^\s]*$)/, "")), !b.parent("li").hasClass("active")) {
+        if (d || (d = b.attr("data-href"), d = d && d.replace(/.*(?=#[^\s]*$)/, "")), !b.parent("li").hasClass("active")) {
             var e = c.find(".active:last a"),
                 f = a.Event("hide.bs.tab", {
                     relatedTarget: b[0]

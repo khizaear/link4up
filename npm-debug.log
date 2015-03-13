@@ -1,0 +1,191 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'npm-git-update',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'npm-git-update', null ]
+5 verbose cache add name=undefined spec="npm-git-update" args=["npm-git-update",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'npm-git-update',
+6 verbose parsed url   path: 'npm-git-update',
+6 verbose parsed url   href: 'npm-git-update' }
+7 silly lockFile 7eebfcb2-npm-git-update npm-git-update
+8 verbose lock npm-git-update /home/linkup/.npm/7eebfcb2-npm-git-update.lock
+9 silly lockFile 7eebfcb2-npm-git-update npm-git-update
+10 silly lockFile 7eebfcb2-npm-git-update npm-git-update
+11 verbose addNamed [ 'npm-git-update', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 78b16790-npm-git-update npm-git-update@
+14 verbose lock npm-git-update@ /home/linkup/.npm/78b16790-npm-git-update.lock
+15 silly addNameRange { name: 'npm-git-update', range: '*', hasData: false }
+16 verbose url raw npm-git-update
+17 verbose url resolving [ 'https://registry.npmjs.org/', './npm-git-update' ]
+18 verbose url resolved https://registry.npmjs.org/npm-git-update
+19 info trying registry request attempt 1 at 04:39:18
+20 http GET https://registry.npmjs.org/npm-git-update
+21 http 200 https://registry.npmjs.org/npm-git-update
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Thu, 05 Mar 2015 11:39:18 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"1N9NC8OFPI3EWJM5A4XWO5S1S"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '3007',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-sjc3130-SJC',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1425555558.265470,VS0,VE351',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'npm-git-update', range: '*', hasData: true }
+24 silly addNameRange versions [ 'npm-git-update', [ '0.0.0', '1.1.0' ] ]
+25 verbose addNamed [ 'npm-git-update', '1.1.0' ]
+26 verbose addNamed [ '1.1.0', '1.1.0' ]
+27 silly lockFile 80069909-npm-git-update-1-1-0 npm-git-update@1.1.0
+28 verbose lock npm-git-update@1.1.0 /home/linkup/.npm/80069909-npm-git-update-1-1-0.lock
+29 silly lockFile f4b0e0f2--update-npm-git-update-1-1-0-tgz https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz
+30 verbose lock https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz /home/linkup/.npm/f4b0e0f2--update-npm-git-update-1-1-0-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz',
+31 verbose addRemoteTarball   'a5b0888bd9bb237d7e7471d6343f2ea20725f355' ]
+32 info retry fetch attempt 1 at 04:39:18
+33 verbose fetch to= /home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz
+34 http GET https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz
+35 http 200 https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz
+36 verbose tar unpack /home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz
+37 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+38 verbose lock tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package /home/linkup/.npm/8224ad95-8638-0-44748219079338014-package.lock
+39 silly lockFile 5c2db403-8638-0-44748219079338014-tmp-tgz tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz
+40 verbose lock tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz /home/linkup/.npm/5c2db403-8638-0-44748219079338014-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+48 silly gunzTarPerm extractEntry index.js
+49 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+50 silly gunzTarPerm extractEntry bin/npm-git-update
+51 silly gunzTarPerm modified mode [ 'bin/npm-git-update', 438, 420 ]
+52 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+53 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+54 silly lockFile 5c2db403-8638-0-44748219079338014-tmp-tgz tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz
+55 silly lockFile 5c2db403-8638-0-44748219079338014-tmp-tgz tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/tmp.tgz
+56 verbose tar pack [ '/home/linkup/.npm/npm-git-update/1.1.0/package.tgz',
+56 verbose tar pack   '/home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package' ]
+57 verbose tarball /home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+58 verbose folder /home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+59 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+60 verbose lock tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package /home/linkup/.npm/8224ad95-8638-0-44748219079338014-package.lock
+61 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+62 verbose lock tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz /home/linkup/.npm/232b9dbb-npm-git-update-1-1-0-package-tgz.lock
+63 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+64 silly lockFile 8224ad95-8638-0-44748219079338014-package tar:///home/linkup/tmp/npm-28404-KAJItW2U/1425555558638-0.44748219079338014/package
+65 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+66 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+67 silly lockFile 5b936406-npm-npm-git-update-1-1-0-package /home/linkup/.npm/npm-git-update/1.1.0/package
+68 verbose lock /home/linkup/.npm/npm-git-update/1.1.0/package /home/linkup/.npm/5b936406-npm-npm-git-update-1-1-0-package.lock
+69 silly lockFile 5b936406-npm-npm-git-update-1-1-0-package /home/linkup/.npm/npm-git-update/1.1.0/package
+70 silly lockFile 5b936406-npm-npm-git-update-1-1-0-package /home/linkup/.npm/npm-git-update/1.1.0/package
+71 verbose tar unpack /home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+72 silly lockFile 8f123fd2-npm-npm-git-update-1-1-0-package tar:///home/linkup/.npm/npm-git-update/1.1.0/package
+73 verbose lock tar:///home/linkup/.npm/npm-git-update/1.1.0/package /home/linkup/.npm/8f123fd2-npm-npm-git-update-1-1-0-package.lock
+74 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+75 verbose lock tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz /home/linkup/.npm/232b9dbb-npm-git-update-1-1-0-package-tgz.lock
+76 silly gunzTarPerm modes [ '755', '644' ]
+77 silly gunzTarPerm extractEntry package.json
+78 silly gunzTarPerm extractEntry .npmignore
+79 silly gunzTarPerm extractEntry README.md
+80 silly gunzTarPerm extractEntry index.js
+81 silly gunzTarPerm extractEntry bin/npm-git-update
+82 silly lockFile 8f123fd2-npm-npm-git-update-1-1-0-package tar:///home/linkup/.npm/npm-git-update/1.1.0/package
+83 silly lockFile 8f123fd2-npm-npm-git-update-1-1-0-package tar:///home/linkup/.npm/npm-git-update/1.1.0/package
+84 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+85 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+86 verbose chmod /home/linkup/.npm/npm-git-update/1.1.0/package.tgz 644
+87 verbose chown /home/linkup/.npm/npm-git-update/1.1.0/package.tgz [ 505, 515 ]
+88 silly lockFile f4b0e0f2--update-npm-git-update-1-1-0-tgz https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz
+89 silly lockFile f4b0e0f2--update-npm-git-update-1-1-0-tgz https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz
+90 silly lockFile 80069909-npm-git-update-1-1-0 npm-git-update@1.1.0
+91 silly lockFile 80069909-npm-git-update-1-1-0 npm-git-update@1.1.0
+92 silly lockFile 78b16790-npm-git-update npm-git-update@
+93 silly lockFile 78b16790-npm-git-update npm-git-update@
+94 silly resolved [ { name: 'npm-git-update',
+94 silly resolved     version: '1.1.0',
+94 silly resolved     description: 'Simple tool that updates modules not referenced from the npm repository',
+94 silly resolved     bin: { 'npm-git-update': 'bin/npm-git-update' },
+94 silly resolved     preferGlobal: true,
+94 silly resolved     main: 'index.js',
+94 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+94 silly resolved     author: { name: 'ashaffer' },
+94 silly resolved     repository:
+94 silly resolved      { type: 'git',
+94 silly resolved        url: 'https://github.com/ashaffer/npm-git-update.git' },
+94 silly resolved     bugs: { url: 'https://github.com/ashaffer/npm-git-update/issues' },
+94 silly resolved     homepage: 'https://github.com/ashaffer/npm-git-update',
+94 silly resolved     license: 'ISC',
+94 silly resolved     dependencies:
+94 silly resolved      { async: '^0.9.0',
+94 silly resolved        'github-url-to-object': '^1.4.0',
+94 silly resolved        npm: '^2.0.2',
+94 silly resolved        'npm-package-arg': '^2.1.2',
+94 silly resolved        'semver-extra': '^2.0.0' },
+94 silly resolved     readme: 'npm-git-update\r\n==============\r\n\r\nnpm-git-update is a simple command that reads in your package.json file and updates only the modules that have are not referenced from the npm repository.  This is useful if you have a variety of private or in-development modules that your project depends on.\r\n',
+94 silly resolved     readmeFilename: 'README.md',
+94 silly resolved     _id: 'npm-git-update@1.1.0',
+94 silly resolved     dist: { shasum: 'a49c6f2911e47c7496bd6cc3e9509639730296ad' },
+94 silly resolved     _from: 'npm-git-update@',
+94 silly resolved     _resolved: 'https://registry.npmjs.org/npm-git-update/-/npm-git-update-1.1.0.tgz' } ]
+95 info install npm-git-update@1.1.0 into /usr/local/lib
+96 info installOne npm-git-update@1.1.0
+97 info /usr/local/lib/node_modules/npm-git-update unbuild
+98 verbose tar unpack /home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+99 silly lockFile 2725c405--lib-node-modules-npm-git-update tar:///usr/local/lib/node_modules/npm-git-update
+100 verbose lock tar:///usr/local/lib/node_modules/npm-git-update /home/linkup/.npm/2725c405--lib-node-modules-npm-git-update.lock
+101 silly lockFile 232b9dbb-npm-git-update-1-1-0-package-tgz tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz
+102 verbose lock tar:///home/linkup/.npm/npm-git-update/1.1.0/package.tgz /home/linkup/.npm/232b9dbb-npm-git-update-1-1-0-package-tgz.lock
+103 silly gunzTarPerm modes [ '755', '644' ]
+104 error Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-git-update'
+104 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-git-update']
+104 error   errno: 3,
+104 error   code: 'EACCES',
+104 error   path: '/usr/local/lib/node_modules/npm-git-update',
+104 error   fstream_type: 'Directory',
+104 error   fstream_path: '/usr/local/lib/node_modules/npm-git-update',
+104 error   fstream_class: 'DirWriter',
+104 error   fstream_stack:
+104 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+104 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+104 error      'Object.oncomplete (fs.js:107:15)' ] }
+105 error Please try running this command again as root/Administrator.
+106 error System Linux 2.6.32-042stab092.2
+107 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "npm-git-update" "-g"
+108 error cwd /home/linkup/public_html
+109 error node -v v0.10.26
+110 error npm -v 1.4.3
+111 error path /usr/local/lib/node_modules/npm-git-update
+112 error fstream_path /usr/local/lib/node_modules/npm-git-update
+113 error fstream_type Directory
+114 error fstream_class DirWriter
+115 error code EACCES
+116 error errno 3
+117 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-git-update'
+118 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+118 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+118 error fstream_stack Object.oncomplete (fs.js:107:15)
+119 verbose exit [ 3, true ]

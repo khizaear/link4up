@@ -1,0 +1,53 @@
+<div class="col-lg-8">
+	<form action="<?php echo  Router::url('/admin/add/'); ?>" method="post" enctype="multipart/form-data">
+	<div class="panel panel-paypal">
+		
+		<div class="panel-heading"><h2>Create New Product</h2></div>
+		<div class="panel-body">		
+			<div class="form-group">
+
+				<?php	echo $this->Form->input('category', array('class'=>'form-control','required','options' => $datas,'name'=>'category','data-initialize'=>'combobox', 'empty' => '(choose one)'));	?>
+			</div>
+			<div id="subcat"></div>
+			<div id="precat"></div>
+			<div class="form-group">
+				<label >Choose Prodcut Image</label>
+				<input type="file" name="image"  required>
+			</div>
+		
+		</div>
+		<div class="panel-footer">
+			<input class="btn btn-success btn-lg" type="submit" value="Create" name="b1">
+		</div>
+		
+	</div>
+	</form>
+</div>
+<script>
+$(document).ready(function(){
+
+	$("#category").change(function(){
+		cat=$("#category").val();
+		$.ajax({
+			url:"<?php echo  Router::url('/admin/get_subcat/'); ?>"+cat,
+			method: 'GET',
+			success:function(data){
+				$("#subcat").html(data)
+			},error:function(err){
+				console.log("Error Reason is "+err.statusText);
+			}
+		});
+	});
+});
+function pop_precat(val){
+	$.ajax({
+		url:"<?php echo  Router::url('/admin/get_precat/'); ?>"+val,
+		method: 'GET',
+		success:function(subdata){
+			$("#precat").html(subdata)
+		},error:function(err){
+			alert(err);
+		}
+	});
+}
+</script>
